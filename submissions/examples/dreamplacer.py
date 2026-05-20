@@ -559,15 +559,15 @@ class Dreamplace:
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.num_iters = _ph_env_int("ITER", 800)
         self.lr = _ph_env_float("LR", 1e-2)
-        self.target_density = _ph_env_float("TARGET_DENSITY", 0.6)
-
+        self.target_density = _ph_env_float("TARGET_DENSITY", 0.7)
+        
         self.optimizer_name = _ph_env_str("OPTIMIZER", "adam")
 
         self.SAVE_ROWS_EVERY = 25
 
         self.k = _ph_env_int("KERNEL_SIZE", 1)
         self.sigma = _ph_env_float("KERNEL_SIGMA", 1.0)
-        self.density_frac = _ph_env_float("DENSITY_FRAC", 0.1)
+        self.density_frac = _ph_env_float("DENSITY_FRAC", 0.5)
 
         self.congestion_frac = _ph_env_float("CONGESTION_FRAC", 0.1)
 
