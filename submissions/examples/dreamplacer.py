@@ -575,7 +575,7 @@ class Dreamplace:
 
         self.routing_model = _ph_env_str("CONG_MODEL", "rudy")
 
-        self.disp_final = _ph_env_float("DISP_FINAL", 0.10)
+        self.disp_final = _ph_env_float("DISP_FINAL", 0.06)
 
         self.mass_scale_exp = _ph_env_float("MASS_SCALE", 0.0)
 
@@ -588,7 +588,9 @@ class Dreamplace:
 
         self.schedule_name = "current"
 
-        self.hill_climb_budget_seconds = 120.0
+        self.hill_climb_budget_seconds = 600.0
+        self.max_hc = 600.0
+        
         self.hill_climb_rounds = 5
         self.hill_climb_k_neighbors = 10
         self.hotspot_tau=0.05
@@ -1223,7 +1225,7 @@ class Dreamplace:
             # For ibm01 (246 hard): 120 + 98 = 218s.
             # For ibm12 (651 hard): 120 + 260 = 380, capped to 300s.
             # For ibm17 (~900 hard): hits 300s cap.
-            hc_budget = min(300.0, hc_budget_base + 0.4 * num_hard)
+            hc_budget = min(self.max_hc, hc_budget_base + 0.4 * num_hard)
             print(f"[place] hill_climb budget: {hc_budget:.0f}s "
                   f"(base={hc_budget_base:.0f}s, num_hard={num_hard})")
 
@@ -1250,6 +1252,7 @@ class Dreamplace:
 
         polish_budget = float(getattr(self, "polish_budget_seconds", 0.0))
         if polish_budget > 0:
+            print("POLISHING ENABLED:")
             from sa_polisher import polish
             print(f"[place] polishing for up to {polish_budget:.0f}s...")
             polished_pos = polish(

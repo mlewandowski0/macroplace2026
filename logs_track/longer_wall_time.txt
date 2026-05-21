@@ -1,0 +1,1124 @@
+mlew@mlew:~/Desktop/PROJS/macroplace2026$ uv run evaluate submissions/examples/dreamplacer.py --all
+================================================================================
+evaluate · Dreamplace  (submissions/examples/dreamplacer.py)
+================================================================================
+
+  ibm01... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm01/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 45, Row: 41
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm01/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 45, Row: 41
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=451
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=4.24, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0877 wl=0.0877 d=0.9557 c=0.6080 ov=0.2311 proxy=1.0379 (ovlp=69, best=1.0379)
+it=0050 loss=0.1037 wl=0.0758 d=1.5734 c=0.6593 ov=33.0929 proxy=1.3370 (ovlp=244, best=1.0379)
+it=0100 loss=0.2473 wl=0.0716 d=1.7565 c=0.5447 ov=16.7220 proxy=1.2094 (ovlp=242, best=1.0379)  pcc[wl=+0.99 d=+0.90 c=+0.91]
+it=0150 loss=0.4093 wl=0.0713 d=1.2209 c=0.5332 ov=13.6313 proxy=1.1255 (ovlp=223, best=1.0379)  pcc[wl=+0.89 d=+0.90 c=+0.88]
+it=0200 loss=0.5760 wl=0.0713 d=1.1375 c=0.5339 ov=15.2718 proxy=1.0579 (ovlp=230, best=1.0379)  pcc[wl=+0.72 d=+0.91 c=+0.89]
+it=0250 loss=0.7329 wl=0.0715 d=1.0599 c=0.5312 ov=14.9436 proxy=1.0169 (ovlp=220, best=1.0169)  pcc[wl=+0.53 d=+0.91 c=+0.89]
+it=0300 loss=0.8875 wl=0.0718 d=1.0025 c=0.5304 ov=15.0446 proxy=1.0056 (ovlp=220, best=1.0056)  pcc[wl=+0.38 d=+0.91 c=+0.89]
+it=0350 loss=1.2617 wl=0.0731 d=0.8712 c=0.5370 ov=0.3710 proxy=0.9773 (ovlp=32, best=0.9773)  pcc[wl=+0.28 d=+0.92 c=+0.87]
+it=0400 loss=1.1732 wl=0.0737 d=0.8414 c=0.5342 ov=0.0006 proxy=0.9608 (ovlp=1, best=0.9564)  pcc[wl=+0.24 d=+0.93 c=+0.84]
+it=0450 loss=1.2101 wl=0.0739 d=0.8145 c=0.5328 ov=0.0014 proxy=0.9515 (ovlp=0, best=0.9515)  pcc[wl=+0.22 d=+0.94 c=+0.83]
+it=0500 loss=1.2431 wl=0.0738 d=0.8003 c=0.5316 ov=0.0000 proxy=0.9426 (ovlp=0, best=0.9426)  pcc[wl=+0.21 d=+0.94 c=+0.83]
+it=0550 loss=1.2824 wl=0.0738 d=0.7899 c=0.5315 ov=0.0001 proxy=0.9461 (ovlp=0, best=0.9419)  pcc[wl=+0.20 d=+0.95 c=+0.83]
+it=0600 loss=1.2886 wl=0.0738 d=0.7822 c=0.5319 ov=0.0000 proxy=0.9432 (ovlp=0, best=0.9397)  pcc[wl=+0.19 d=+0.95 c=+0.83]
+it=0650 loss=1.2900 wl=0.0737 d=0.7785 c=0.5320 ov=0.0002 proxy=0.9382 (ovlp=0, best=0.9382)  pcc[wl=+0.18 d=+0.95 c=+0.83]
+it=0700 loss=1.2874 wl=0.0737 d=0.7767 c=0.5319 ov=0.0000 proxy=0.9396 (ovlp=0, best=0.9382)  pcc[wl=+0.18 d=+0.96 c=+0.84]
+it=0750 loss=1.2867 wl=0.0737 d=0.7751 c=0.5319 ov=0.0000 proxy=0.9383 (ovlp=0, best=0.9382)  pcc[wl=+0.17 d=+0.96 c=+0.84]
+[place] surrogate vs exact (Pearson):  wl=+0.170  den=+0.958  cong=+0.838
+k=0 : score=0.9371, overlaps=0
+k=1 : score=0.9371, overlaps=0
+k=2 : score=0.9371, overlaps=0
+k=5 : score=0.9371, overlaps=0
+k=10 : score=0.9371, overlaps=0
+k=20 : score=0.9371, overlaps=0
+k=50 : score=0.9371, overlaps=0
+k=100 : score=0.9371, overlaps=0
+k=1000000000 : score=0.9371, overlaps=0
+[place] returning best snapshot: proxy=0.9371, overlaps=0
+[place] legalize-all-buckets (9 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_0       0.9371         0       0.9371           0   +0.0000 *
+  bucket_1       0.9371         0      SKIPPED (raw >= best legal 0.9371)
+  bucket_2       0.9371         0      SKIPPED (raw >= best legal 0.9371)
+  bucket_5       0.9371         0      SKIPPED (raw >= best legal 0.9371)
+  bucket_10      0.9371         0      SKIPPED (raw >= best legal 0.9371)
+  bucket_20      0.9371         0      SKIPPED (raw >= best legal 0.9371)
+  bucket_50      0.9371         0      SKIPPED (raw >= best legal 0.9371)
+  bucket_100     0.9371         0      SKIPPED (raw >= best legal 0.9371)
+  bucket_1000000000     0.9371         0      SKIPPED (raw >= best legal 0.9371)
+[place] winner: bucket_0 -> legal_proxy=0.9371 (raw 0.9371 with 0 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=246)
+[hill_climb] start: score=0.9371, 246 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=246, improvements=140, score=0.9289, delta this round=-0.0083
+[hill_climb] round 1: visited=246, improvements=77, score=0.9268, delta this round=-0.0021
+[hill_climb] round 2: visited=246, improvements=39, score=0.9251, delta this round=-0.0017
+[hill_climb] round 3: visited=246, improvements=24, score=0.9249, delta this round=-0.0002
+[hill_climb] round 4: visited=246, improvements=15, score=0.9249, delta this round=-0.0001
+[hill_climb] done: 43.3s, 1230 macros visited, 295 improvements, score: 0.9371 -> 0.9249 (-0.0123)
+[place] post-hill_climb: proxy=0.9249, overlaps=0, climb_delta=-0.0123
+proxy=0.9249  (wl=0.069 den=0.682 cong=1.030)  VALID  [50.23s]
+  ibm02... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm02/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 30, Row: 27
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm02/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 30, Row: 27
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=452
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=5.66, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0958 wl=0.0958 d=0.8163 c=2.4368 ov=0.2778 proxy=1.5658 (ovlp=108, best=1.5658)
+it=0050 loss=0.1791 wl=0.0827 d=1.2530 c=2.2902 ov=45.5918 proxy=1.5836 (ovlp=247, best=1.5495)
+it=0100 loss=0.6548 wl=0.0798 d=1.2710 c=2.1753 ov=67.0268 proxy=1.5478 (ovlp=296, best=1.5478)  pcc[wl=+0.98 d=+1.00 c=+0.97]
+it=0150 loss=1.1160 wl=0.0798 d=1.1105 c=2.0635 ov=57.1469 proxy=1.4698 (ovlp=290, best=1.4698)  pcc[wl=+0.92 d=+0.99 c=+0.98]
+it=0200 loss=1.5852 wl=0.0798 d=1.0300 c=2.0434 ov=54.2389 proxy=1.4436 (ovlp=274, best=1.4436)  pcc[wl=+0.79 d=+0.99 c=+0.98]
+it=0250 loss=2.0481 wl=0.0798 d=1.0058 c=2.0234 ov=51.7522 proxy=1.4228 (ovlp=268, best=1.4228)  pcc[wl=+0.64 d=+0.99 c=+0.98]
+it=0300 loss=2.5047 wl=0.0801 d=0.9834 c=2.0064 ov=49.1414 proxy=1.4121 (ovlp=265, best=1.4121)  pcc[wl=+0.50 d=+0.99 c=+0.97]
+it=0350 loss=4.3138 wl=0.0804 d=1.0243 c=1.9567 ov=1.9826 proxy=1.4072 (ovlp=78, best=1.4072)  pcc[wl=+0.39 d=+0.96 c=+0.96]
+it=0400 loss=3.3944 wl=0.0814 d=1.0018 c=1.9575 ov=0.0028 proxy=1.3788 (ovlp=3, best=1.3788)  pcc[wl=+0.32 d=+0.95 c=+0.96]
+it=0450 loss=3.4527 wl=0.0815 d=0.9892 c=1.9640 ov=0.0002 proxy=1.3898 (ovlp=1, best=1.3761)  pcc[wl=+0.28 d=+0.94 c=+0.96]
+it=0500 loss=3.5258 wl=0.0813 d=0.9841 c=1.9756 ov=0.0006 proxy=1.3940 (ovlp=1, best=1.3761)  pcc[wl=+0.24 d=+0.93 c=+0.96]
+it=0550 loss=3.5757 wl=0.0810 d=0.9794 c=1.9748 ov=0.0000 proxy=1.3985 (ovlp=0, best=1.3761)  pcc[wl=+0.21 d=+0.93 c=+0.96]
+it=0600 loss=3.5895 wl=0.0809 d=0.9763 c=1.9756 ov=0.0000 proxy=1.4053 (ovlp=0, best=1.3761)  pcc[wl=+0.19 d=+0.93 c=+0.95]
+it=0650 loss=3.5930 wl=0.0808 d=0.9754 c=1.9759 ov=0.0000 proxy=1.4040 (ovlp=0, best=1.3761)  pcc[wl=+0.17 d=+0.93 c=+0.94]
+it=0700 loss=3.5923 wl=0.0807 d=0.9747 c=1.9760 ov=0.0000 proxy=1.4172 (ovlp=0, best=1.3761)  pcc[wl=+0.15 d=+0.93 c=+0.93]
+it=0750 loss=3.5894 wl=0.0806 d=0.9747 c=1.9742 ov=0.0000 proxy=1.4215 (ovlp=0, best=1.3761)  pcc[wl=+0.13 d=+0.93 c=+0.91]
+[place] surrogate vs exact (Pearson):  wl=+0.114  den=+0.929  cong=+0.896
+k=0 : score=1.3938, overlaps=0
+k=1 : score=1.3898, overlaps=1
+k=2 : score=1.3761, overlaps=2
+k=5 : score=1.3761, overlaps=2
+k=10 : score=1.3761, overlaps=2
+k=20 : score=1.3761, overlaps=2
+k=50 : score=1.3761, overlaps=2
+k=100 : score=1.3761, overlaps=2
+k=1000000000 : score=1.3761, overlaps=2
+[place] returning best snapshot: proxy=1.3761, overlaps=2
+[place] legalize-all-buckets (9 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_2       1.3761         2       1.3761           0   +0.0000 *
+  bucket_5       1.3761         2       1.3761           0   +0.0000
+  bucket_10      1.3761         2       1.3761           0   +0.0000
+  bucket_20      1.3761         2       1.3761           0   +0.0000
+  bucket_50      1.3761         2       1.3761           0   +0.0000
+  bucket_100     1.3761         2       1.3761           0   +0.0000
+  bucket_1000000000     1.3761         2       1.3761           0   +0.0000
+  bucket_1       1.3898         1      SKIPPED (raw >= best legal 1.3761)
+  bucket_0       1.3938         0      SKIPPED (raw >= best legal 1.3761)
+[place] winner: bucket_2 -> legal_proxy=1.3761 (raw 1.3761 with 2 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=271)
+[hill_climb] start: score=1.3761, 271 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=271, improvements=241, score=1.3090, delta this round=-0.0671
+[hill_climb] round 1: visited=271, improvements=178, score=1.2812, delta this round=-0.0278
+[hill_climb] round 2: visited=271, improvements=143, score=1.2763, delta this round=-0.0049
+[hill_climb] round 3: visited=271, improvements=110, score=1.2742, delta this round=-0.0021
+[hill_climb] round 4: visited=271, improvements=63, score=1.2730, delta this round=-0.0012
+[hill_climb] done: 75.7s, 1355 macros visited, 735 improvements, score: 1.3761 -> 1.2730 (-0.1031)
+[place] post-hill_climb: proxy=1.2730, overlaps=0, climb_delta=-0.1031
+proxy=1.2730  (wl=0.080 den=0.710 cong=1.675)  VALID  [82.50s]
+  ibm03... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm03/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 32, Row: 29
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm03/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 32, Row: 29
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=453
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=4.24, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.1098 wl=0.1098 d=0.8147 c=1.9187 ov=0.1895 proxy=1.3255 (ovlp=61, best=1.3255)
+it=0050 loss=0.1743 wl=0.0982 d=1.0479 c=1.8078 ov=49.4225 proxy=1.3867 (ovlp=276, best=1.3255)
+it=0100 loss=0.5573 wl=0.0940 d=1.2227 c=1.7328 ov=69.7538 proxy=1.3952 (ovlp=336, best=1.3255)  pcc[wl=+0.99 d=+0.97 c=+0.99]
+it=0150 loss=0.9435 wl=0.0944 d=0.9256 c=1.6849 ov=61.2653 proxy=1.3111 (ovlp=324, best=1.3111)  pcc[wl=+0.87 d=+0.94 c=+0.99]
+it=0200 loss=1.3011 wl=0.0955 d=0.8221 c=1.6305 ov=56.4890 proxy=1.2490 (ovlp=309, best=1.2490)  pcc[wl=+0.64 d=+0.96 c=+0.99]
+it=0250 loss=1.6439 wl=0.0965 d=0.7692 c=1.5855 ov=53.6252 proxy=1.2174 (ovlp=300, best=1.2174)  pcc[wl=+0.45 d=+0.96 c=+1.00]
+it=0300 loss=1.9858 wl=0.0974 d=0.7366 c=1.5571 ov=49.5595 proxy=1.1811 (ovlp=295, best=1.1811)  pcc[wl=+0.36 d=+0.97 c=+1.00]
+it=0350 loss=3.7475 wl=0.0990 d=0.7297 c=1.5554 ov=1.8628 proxy=1.1426 (ovlp=50, best=1.1426)  pcc[wl=+0.35 d=+0.96 c=+0.98]
+it=0400 loss=4.2256 wl=0.0994 d=0.7124 c=1.5431 ov=0.7722 proxy=1.1370 (ovlp=2, best=1.1326)  pcc[wl=+0.37 d=+0.96 c=+0.97]
+it=0450 loss=5.2025 wl=0.0996 d=0.7035 c=1.5348 ov=0.7715 proxy=1.1431 (ovlp=1, best=1.1326)  pcc[wl=+0.40 d=+0.96 c=+0.98]
+it=0500 loss=6.1881 wl=0.0995 d=0.6999 c=1.5313 ov=0.7715 proxy=1.1323 (ovlp=1, best=1.1323)  pcc[wl=+0.41 d=+0.97 c=+0.98]
+it=0550 loss=7.1750 wl=0.0995 d=0.6970 c=1.5291 ov=0.7715 proxy=1.1293 (ovlp=1, best=1.1293)  pcc[wl=+0.43 d=+0.97 c=+0.98]
+it=0600 loss=8.1340 wl=0.0995 d=0.6948 c=1.5282 ov=0.7715 proxy=1.1379 (ovlp=1, best=1.1256)  pcc[wl=+0.44 d=+0.97 c=+0.98]
+it=0650 loss=9.0864 wl=0.0994 d=0.6936 c=1.5282 ov=0.7715 proxy=1.1331 (ovlp=1, best=1.1256)  pcc[wl=+0.44 d=+0.97 c=+0.98]
+it=0700 loss=10.0343 wl=0.0994 d=0.6929 c=1.5284 ov=0.7715 proxy=1.1376 (ovlp=1, best=1.1256)  pcc[wl=+0.45 d=+0.97 c=+0.98]
+it=0750 loss=10.9820 wl=0.0993 d=0.6920 c=1.5284 ov=0.7715 proxy=1.1258 (ovlp=1, best=1.1256)  pcc[wl=+0.45 d=+0.97 c=+0.98]
+[place] surrogate vs exact (Pearson):  wl=+0.454  den=+0.970  cong=+0.982
+k=0 : score=inf, overlaps=None
+k=1 : score=1.1219, overlaps=1
+k=2 : score=1.1219, overlaps=1
+k=5 : score=1.1219, overlaps=1
+k=10 : score=1.1219, overlaps=1
+k=20 : score=1.1219, overlaps=1
+k=50 : score=1.1219, overlaps=1
+k=100 : score=1.1219, overlaps=1
+k=1000000000 : score=1.1219, overlaps=1
+[place] returning best snapshot: proxy=1.1219, overlaps=1
+[place] legalize-all-buckets (8 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_1       1.1219         1       1.1209           0   -0.0010 *
+  bucket_2       1.1219         1      SKIPPED (raw >= best legal 1.1209)
+  bucket_5       1.1219         1      SKIPPED (raw >= best legal 1.1209)
+  bucket_10      1.1219         1      SKIPPED (raw >= best legal 1.1209)
+  bucket_20      1.1219         1      SKIPPED (raw >= best legal 1.1209)
+  bucket_50      1.1219         1      SKIPPED (raw >= best legal 1.1209)
+  bucket_100     1.1219         1      SKIPPED (raw >= best legal 1.1209)
+  bucket_1000000000     1.1219         1      SKIPPED (raw >= best legal 1.1209)
+[place] winner: bucket_1 -> legal_proxy=1.1209 (raw 1.1219 with 1 overlaps, degradation=-0.0010)
+[place] hill_climb budget: 600s (base=600s, num_hard=290)
+[hill_climb] start: score=1.1209, 290 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=290, improvements=230, score=1.0992, delta this round=-0.0218
+[hill_climb] round 1: visited=290, improvements=159, score=1.0960, delta this round=-0.0032
+[hill_climb] round 2: visited=290, improvements=130, score=1.0927, delta this round=-0.0033
+[hill_climb] round 3: visited=290, improvements=101, score=1.0919, delta this round=-0.0008
+[hill_climb] round 4: visited=290, improvements=82, score=1.0911, delta this round=-0.0008
+[hill_climb] done: 73.5s, 1450 macros visited, 702 improvements, score: 1.1209 -> 1.0911 (-0.0299)
+[place] post-hill_climb: proxy=1.0911, overlaps=0, climb_delta=-0.0299
+proxy=1.0911  (wl=0.087 den=0.602 cong=1.406)  VALID  [78.65s]
+  ibm04... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm04/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 31, Row: 30
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm04/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 31, Row: 30
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=454
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=5.48, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0973 wl=0.0973 d=0.8749 c=1.9494 ov=0.2418 proxy=1.3133 (ovlp=68, best=1.3133)
+it=0050 loss=0.1652 wl=0.0869 d=1.1925 c=1.8607 ov=44.1225 proxy=1.3956 (ovlp=226, best=1.3133)
+it=0100 loss=0.5505 wl=0.0833 d=1.1593 c=1.7518 ov=67.9953 proxy=1.3916 (ovlp=296, best=1.3133)  pcc[wl=+0.98 d=+0.95 c=+0.99]
+it=0150 loss=0.9279 wl=0.0833 d=0.9382 c=1.6711 ov=61.7469 proxy=1.2792 (ovlp=282, best=1.2792)  pcc[wl=+0.86 d=+0.94 c=+0.99]
+it=0200 loss=1.2974 wl=0.0836 d=0.8690 c=1.6336 ov=57.2775 proxy=1.2497 (ovlp=274, best=1.2497)  pcc[wl=+0.64 d=+0.95 c=+0.99]
+it=0250 loss=1.6523 wl=0.0842 d=0.8340 c=1.5971 ov=53.3952 proxy=1.2041 (ovlp=272, best=1.2041)  pcc[wl=+0.43 d=+0.96 c=+0.99]
+it=0300 loss=2.0038 wl=0.0849 d=0.8225 c=1.5686 ov=51.9236 proxy=1.1994 (ovlp=261, best=1.1994)  pcc[wl=+0.29 d=+0.97 c=+0.99]
+it=0350 loss=4.3947 wl=0.0859 d=0.7656 c=1.5621 ov=2.6777 proxy=1.1390 (ovlp=48, best=1.1390)  pcc[wl=+0.24 d=+0.97 c=+0.98]
+it=0400 loss=4.2717 wl=0.0864 d=0.7335 c=1.5617 ov=0.7724 proxy=1.1481 (ovlp=1, best=1.1390)  pcc[wl=+0.23 d=+0.97 c=+0.98]
+it=0450 loss=5.2747 wl=0.0865 d=0.7234 c=1.5580 ov=0.7727 proxy=1.1477 (ovlp=2, best=1.1390)  pcc[wl=+0.24 d=+0.97 c=+0.98]
+it=0500 loss=6.2741 wl=0.0865 d=0.7140 c=1.5572 ov=0.7715 proxy=1.1547 (ovlp=1, best=1.1390)  pcc[wl=+0.24 d=+0.98 c=+0.98]
+it=0550 loss=7.2803 wl=0.0864 d=0.7068 c=1.5583 ov=0.7715 proxy=1.1415 (ovlp=1, best=1.1390)  pcc[wl=+0.24 d=+0.98 c=+0.98]
+it=0600 loss=7.5622 wl=0.0864 d=0.7078 c=1.5628 ov=0.6713 proxy=1.1360 (ovlp=2, best=1.1360)  pcc[wl=+0.25 d=+0.98 c=+0.98]
+it=0650 loss=8.1070 wl=0.0863 d=0.7080 c=1.5642 ov=0.6349 proxy=1.1443 (ovlp=2, best=1.1360)  pcc[wl=+0.25 d=+0.98 c=+0.98]
+it=0700 loss=8.7079 wl=0.0863 d=0.7080 c=1.5652 ov=0.6145 proxy=1.1406 (ovlp=2, best=1.1360)  pcc[wl=+0.24 d=+0.98 c=+0.98]
+it=0750 loss=9.2711 wl=0.0862 d=0.7079 c=1.5660 ov=0.5953 proxy=1.1431 (ovlp=2, best=1.1360)  pcc[wl=+0.24 d=+0.98 c=+0.98]
+[place] surrogate vs exact (Pearson):  wl=+0.241  den=+0.984  cong=+0.985
+k=0 : score=inf, overlaps=None
+k=1 : score=1.1415, overlaps=1
+k=2 : score=1.1360, overlaps=2
+k=5 : score=1.1360, overlaps=2
+k=10 : score=1.1360, overlaps=2
+k=20 : score=1.1360, overlaps=2
+k=50 : score=1.1360, overlaps=2
+k=100 : score=1.1360, overlaps=2
+k=1000000000 : score=1.1360, overlaps=2
+[place] returning best snapshot: proxy=1.1360, overlaps=2
+[place] legalize-all-buckets (8 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_2       1.1360         2       1.1385           0   +0.0025 *
+  bucket_5       1.1360         2       1.1385           0   +0.0025
+  bucket_10      1.1360         2       1.1385           0   +0.0025
+  bucket_20      1.1360         2       1.1385           0   +0.0025
+  bucket_50      1.1360         2       1.1385           0   +0.0025
+  bucket_100     1.1360         2       1.1385           0   +0.0025
+  bucket_1000000000     1.1360         2       1.1385           0   +0.0025
+  bucket_1       1.1415         1      SKIPPED (raw >= best legal 1.1385)
+[place] winner: bucket_2 -> legal_proxy=1.1385 (raw 1.1360 with 2 overlaps, degradation=+0.0025)
+[place] hill_climb budget: 600s (base=600s, num_hard=295)
+[hill_climb] start: score=1.1385, 295 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=295, improvements=261, score=1.0904, delta this round=-0.0481
+[hill_climb] round 1: visited=295, improvements=180, score=1.0798, delta this round=-0.0106
+[hill_climb] round 2: visited=295, improvements=147, score=1.0764, delta this round=-0.0034
+[hill_climb] round 3: visited=295, improvements=103, score=1.0751, delta this round=-0.0012
+[hill_climb] round 4: visited=295, improvements=79, score=1.0736, delta this round=-0.0015
+[hill_climb] done: 109.5s, 1475 macros visited, 770 improvements, score: 1.1385 -> 1.0736 (-0.0649)
+[place] post-hill_climb: proxy=1.0736, overlaps=0, climb_delta=-0.0649
+proxy=1.0736  (wl=0.077 den=0.664 cong=1.329)  VALID  [117.18s]
+  ibm06... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm06/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 31, Row: 28
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm06/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 31, Row: 28
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=456
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=4.58, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0948 wl=0.0948 d=0.8197 c=2.3322 ov=0.1875 proxy=1.6577 (ovlp=47, best=1.6577)
+it=0050 loss=0.1783 wl=0.0840 d=1.3531 c=2.2430 ov=23.6083 proxy=1.7237 (ovlp=105, best=1.6577)
+it=0100 loss=0.6413 wl=0.0806 d=1.3283 c=2.1116 ov=29.9063 proxy=1.6641 (ovlp=149, best=1.6577)  pcc[wl=+0.98 d=+0.94 c=+0.99]
+it=0150 loss=1.0940 wl=0.0812 d=0.8701 c=2.0500 ov=28.3944 proxy=1.5275 (ovlp=132, best=1.5275)  pcc[wl=+0.78 d=+0.90 c=+0.98]
+it=0200 loss=1.5373 wl=0.0821 d=0.7937 c=2.0100 ov=28.5412 proxy=1.4896 (ovlp=134, best=1.4896)  pcc[wl=+0.48 d=+0.93 c=+0.97]
+it=0250 loss=1.9670 wl=0.0830 d=0.7580 c=1.9724 ov=27.2704 proxy=1.4497 (ovlp=140, best=1.4497)  pcc[wl=+0.30 d=+0.94 c=+0.97]
+it=0300 loss=2.3940 wl=0.0839 d=0.7418 c=1.9455 ov=26.9796 proxy=1.4399 (ovlp=134, best=1.4332)  pcc[wl=+0.24 d=+0.95 c=+0.97]
+it=0350 loss=3.7008 wl=0.0846 d=0.7067 c=1.9444 ov=1.3639 proxy=1.4221 (ovlp=21, best=1.4221)  pcc[wl=+0.23 d=+0.95 c=+0.97]
+it=0400 loss=3.9083 wl=0.0848 d=0.6989 c=1.9373 ov=0.3815 proxy=1.4177 (ovlp=1, best=1.4162)  pcc[wl=+0.25 d=+0.95 c=+0.97]
+it=0450 loss=4.3276 wl=0.0849 d=0.6740 c=1.9314 ov=0.3801 proxy=1.4338 (ovlp=1, best=1.4162)  pcc[wl=+0.27 d=+0.95 c=+0.95]
+it=0500 loss=4.7583 wl=0.0848 d=0.6687 c=1.9282 ov=0.3801 proxy=1.4271 (ovlp=1, best=1.4162)  pcc[wl=+0.28 d=+0.96 c=+0.94]
+it=0550 loss=5.1924 wl=0.0847 d=0.6661 c=1.9270 ov=0.3801 proxy=1.4242 (ovlp=1, best=1.4162)  pcc[wl=+0.28 d=+0.96 c=+0.93]
+it=0600 loss=4.5731 wl=0.0846 d=0.6643 c=1.9271 ov=0.2045 proxy=1.4172 (ovlp=1, best=1.4162)  pcc[wl=+0.28 d=+0.96 c=+0.93]
+it=0650 loss=3.5333 wl=0.0845 d=0.6630 c=1.9268 ov=0.0222 proxy=1.4232 (ovlp=3, best=1.4162)  pcc[wl=+0.28 d=+0.96 c=+0.92]
+it=0700 loss=3.3791 wl=0.0844 d=0.6624 c=1.9265 ov=0.0000 proxy=1.4132 (ovlp=0, best=1.4132)  pcc[wl=+0.28 d=+0.96 c=+0.92]
+it=0750 loss=3.3784 wl=0.0844 d=0.6614 c=1.9266 ov=0.0000 proxy=1.4203 (ovlp=0, best=1.4132)  pcc[wl=+0.28 d=+0.96 c=+0.92]
+[place] surrogate vs exact (Pearson):  wl=+0.274  den=+0.964  cong=+0.923
+k=0 : score=1.4092, overlaps=0
+k=1 : score=1.4092, overlaps=0
+k=2 : score=1.4092, overlaps=0
+k=5 : score=1.4092, overlaps=0
+k=10 : score=1.4092, overlaps=0
+k=20 : score=1.4092, overlaps=0
+k=50 : score=1.4092, overlaps=0
+k=100 : score=1.4092, overlaps=0
+k=1000000000 : score=1.4092, overlaps=0
+[place] returning best snapshot: proxy=1.4092, overlaps=0
+[place] legalize-all-buckets (9 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_0       1.4092         0       1.4092           0   +0.0000 *
+  bucket_1       1.4092         0      SKIPPED (raw >= best legal 1.4092)
+  bucket_2       1.4092         0      SKIPPED (raw >= best legal 1.4092)
+  bucket_5       1.4092         0      SKIPPED (raw >= best legal 1.4092)
+  bucket_10      1.4092         0      SKIPPED (raw >= best legal 1.4092)
+  bucket_20      1.4092         0      SKIPPED (raw >= best legal 1.4092)
+  bucket_50      1.4092         0      SKIPPED (raw >= best legal 1.4092)
+  bucket_100     1.4092         0      SKIPPED (raw >= best legal 1.4092)
+  bucket_1000000000     1.4092         0      SKIPPED (raw >= best legal 1.4092)
+[place] winner: bucket_0 -> legal_proxy=1.4092 (raw 1.4092 with 0 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=178)
+[hill_climb] start: score=1.4092, 178 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=178, improvements=126, score=1.3937, delta this round=-0.0155
+[hill_climb] round 1: visited=178, improvements=72, score=1.3909, delta this round=-0.0028
+[hill_climb] round 2: visited=178, improvements=53, score=1.3899, delta this round=-0.0010
+[hill_climb] round 3: visited=178, improvements=39, score=1.3869, delta this round=-0.0030
+[hill_climb] round 4: visited=178, improvements=60, score=1.3854, delta this round=-0.0015
+[hill_climb] done: 47.7s, 890 macros visited, 350 improvements, score: 1.4092 -> 1.3854 (-0.0238)
+[place] post-hill_climb: proxy=1.3854, overlaps=0, climb_delta=-0.0238
+proxy=1.3854  (wl=0.071 den=0.608 cong=2.020)  VALID  [52.81s]
+  ibm07... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm07/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 35, Row: 32
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm07/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 35, Row: 32
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=457
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=3.16, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0914 wl=0.0914 d=0.9840 c=2.2855 ov=0.2303 proxy=1.4761 (ovlp=82, best=1.4761)
+it=0050 loss=0.1746 wl=0.0814 d=1.2711 c=2.2162 ov=43.7748 proxy=1.5182 (ovlp=233, best=1.4735)
+it=0100 loss=0.6503 wl=0.0785 d=1.4245 c=2.1487 ov=56.9013 proxy=1.4918 (ovlp=265, best=1.4735)  pcc[wl=+0.96 d=+0.99 c=+0.99]
+it=0150 loss=1.1338 wl=0.0788 d=0.9828 c=2.1245 ov=51.3529 proxy=1.4148 (ovlp=274, best=1.4148)  pcc[wl=+0.71 d=+0.98 c=+0.94]
+it=0200 loss=1.6026 wl=0.0791 d=0.8762 c=2.0987 ov=46.1826 proxy=1.3699 (ovlp=278, best=1.3699)  pcc[wl=+0.40 d=+0.99 c=+0.90]
+it=0250 loss=2.0765 wl=0.0794 d=0.8776 c=2.0809 ov=48.7859 proxy=1.3362 (ovlp=275, best=1.3362)  pcc[wl=+0.20 d=+0.97 c=+0.83]
+it=0300 loss=2.5542 wl=0.0798 d=0.8818 c=2.0724 ov=50.3935 proxy=1.3290 (ovlp=277, best=1.3210)  pcc[wl=+0.09 d=+0.96 c=+0.83]
+it=0350 loss=4.1653 wl=0.0804 d=0.7833 c=2.0482 ov=1.5802 proxy=1.3096 (ovlp=41, best=1.3091)  pcc[wl=+0.05 d=+0.97 c=+0.86]
+it=0400 loss=3.4264 wl=0.0807 d=0.7511 c=2.0381 ov=0.0008 proxy=1.2976 (ovlp=0, best=1.2976)  pcc[wl=+0.04 d=+0.97 c=+0.88]
+it=0450 loss=3.4543 wl=0.0809 d=0.7378 c=2.0307 ov=0.0000 proxy=1.2944 (ovlp=0, best=1.2944)  pcc[wl=+0.05 d=+0.97 c=+0.90]
+it=0500 loss=3.4864 wl=0.0811 d=0.7306 c=2.0245 ov=0.0000 proxy=1.3013 (ovlp=0, best=1.2910)  pcc[wl=+0.06 d=+0.97 c=+0.91]
+it=0550 loss=3.5175 wl=0.0811 d=0.7256 c=2.0176 ov=0.0000 proxy=1.2884 (ovlp=0, best=1.2884)  pcc[wl=+0.07 d=+0.97 c=+0.91]
+it=0600 loss=3.5258 wl=0.0812 d=0.7229 c=2.0156 ov=0.0000 proxy=1.2763 (ovlp=0, best=1.2763)  pcc[wl=+0.08 d=+0.97 c=+0.92]
+it=0650 loss=3.5270 wl=0.0812 d=0.7213 c=2.0142 ov=0.0000 proxy=1.2750 (ovlp=0, best=1.2750)  pcc[wl=+0.09 d=+0.97 c=+0.93]
+it=0700 loss=3.5243 wl=0.0812 d=0.7202 c=2.0126 ov=0.0000 proxy=1.2785 (ovlp=0, best=1.2750)  pcc[wl=+0.09 d=+0.97 c=+0.93]
+it=0750 loss=3.5207 wl=0.0812 d=0.7192 c=2.0105 ov=0.0000 proxy=1.2771 (ovlp=0, best=1.2750)  pcc[wl=+0.10 d=+0.97 c=+0.94]
+[place] surrogate vs exact (Pearson):  wl=+0.103  den=+0.974  cong=+0.939
+k=0 : score=1.2750, overlaps=0
+k=1 : score=1.2750, overlaps=0
+k=2 : score=1.2750, overlaps=0
+k=5 : score=1.2750, overlaps=0
+k=10 : score=1.2750, overlaps=0
+k=20 : score=1.2750, overlaps=0
+k=50 : score=1.2750, overlaps=0
+k=100 : score=1.2750, overlaps=0
+k=1000000000 : score=1.2750, overlaps=0
+[place] returning best snapshot: proxy=1.2750, overlaps=0
+[place] legalize-all-buckets (9 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_0       1.2750         0       1.2750           0   +0.0000 *
+  bucket_1       1.2750         0      SKIPPED (raw >= best legal 1.2750)
+  bucket_2       1.2750         0      SKIPPED (raw >= best legal 1.2750)
+  bucket_5       1.2750         0      SKIPPED (raw >= best legal 1.2750)
+  bucket_10      1.2750         0      SKIPPED (raw >= best legal 1.2750)
+  bucket_20      1.2750         0      SKIPPED (raw >= best legal 1.2750)
+  bucket_50      1.2750         0      SKIPPED (raw >= best legal 1.2750)
+  bucket_100     1.2750         0      SKIPPED (raw >= best legal 1.2750)
+  bucket_1000000000     1.2750         0      SKIPPED (raw >= best legal 1.2750)
+[place] winner: bucket_0 -> legal_proxy=1.2750 (raw 1.2750 with 0 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=291)
+[hill_climb] start: score=1.2750, 291 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=291, improvements=246, score=1.2465, delta this round=-0.0285
+[hill_climb] round 1: visited=291, improvements=167, score=1.2394, delta this round=-0.0071
+[hill_climb] round 2: visited=291, improvements=125, score=1.2382, delta this round=-0.0012
+[hill_climb] round 3: visited=291, improvements=100, score=1.2377, delta this round=-0.0004
+[hill_climb] round 4: visited=291, improvements=75, score=1.2370, delta this round=-0.0007
+[hill_climb] done: 123.8s, 1455 macros visited, 713 improvements, score: 1.2750 -> 1.2370 (-0.0379)
+[place] post-hill_climb: proxy=1.2370, overlaps=0, climb_delta=-0.0379
+proxy=1.2370  (wl=0.072 den=0.652 cong=1.677)  VALID  [133.10s]
+  ibm08... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm08/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 38, Row: 34
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm08/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 38, Row: 34
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=458
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=5.48, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0972 wl=0.0972 d=1.0003 c=2.2164 ov=0.2847 proxy=1.4664 (ovlp=86, best=1.4664)
+it=0050 loss=0.1797 wl=0.0879 d=1.3358 c=2.1806 ov=58.9103 proxy=1.5206 (ovlp=239, best=1.4664)
+it=0100 loss=0.6488 wl=0.0854 d=1.2094 c=2.1340 ov=74.3749 proxy=1.4779 (ovlp=295, best=1.4664)  pcc[wl=+0.93 d=+0.89 c=+0.99]
+it=0150 loss=1.1198 wl=0.0854 d=0.9620 c=2.0837 ov=69.5975 proxy=1.4027 (ovlp=288, best=1.4027)  pcc[wl=+0.59 d=+0.86 c=+0.94]
+it=0200 loss=1.5813 wl=0.0857 d=0.8666 c=2.0594 ov=63.2660 proxy=1.3685 (ovlp=274, best=1.3682)  pcc[wl=+0.24 d=+0.91 c=+0.92]
+it=0250 loss=2.0339 wl=0.0862 d=0.8131 c=2.0373 ov=59.8104 proxy=1.3429 (ovlp=270, best=1.3429)  pcc[wl=+0.06 d=+0.94 c=+0.87]
+it=0300 loss=2.4681 wl=0.0867 d=0.8223 c=1.9978 ov=58.0903 proxy=1.3057 (ovlp=276, best=1.3057)  pcc[wl=-0.01 d=+0.94 c=+0.87]
+it=0350 loss=3.8135 wl=0.0875 d=0.7907 c=1.9880 ov=1.1591 proxy=1.2899 (ovlp=40, best=1.2811)  pcc[wl=-0.01 d=+0.95 c=+0.89]
+it=0400 loss=3.5541 wl=0.0879 d=0.7701 c=1.9767 ov=0.0995 proxy=1.2860 (ovlp=5, best=1.2811)  pcc[wl=+0.01 d=+0.95 c=+0.90]
+it=0450 loss=3.3822 wl=0.0880 d=0.7590 c=1.9631 ov=0.0029 proxy=1.2760 (ovlp=2, best=1.2760)  pcc[wl=+0.04 d=+0.95 c=+0.90]
+it=0500 loss=3.4032 wl=0.0881 d=0.7524 c=1.9544 ov=0.0001 proxy=1.2662 (ovlp=0, best=1.2662)  pcc[wl=+0.06 d=+0.95 c=+0.91]
+it=0550 loss=3.4402 wl=0.0881 d=0.7462 c=1.9512 ov=0.0000 proxy=1.2673 (ovlp=0, best=1.2662)  pcc[wl=+0.08 d=+0.95 c=+0.90]
+it=0600 loss=3.4469 wl=0.0881 d=0.7430 c=1.9480 ov=0.0000 proxy=1.2651 (ovlp=0, best=1.2615)  pcc[wl=+0.09 d=+0.96 c=+0.91]
+it=0650 loss=3.4490 wl=0.0880 d=0.7417 c=1.9469 ov=0.0000 proxy=1.2657 (ovlp=0, best=1.2615)  pcc[wl=+0.10 d=+0.96 c=+0.91]
+it=0700 loss=3.4479 wl=0.0880 d=0.7406 c=1.9466 ov=0.0000 proxy=1.2631 (ovlp=0, best=1.2615)  pcc[wl=+0.11 d=+0.96 c=+0.91]
+it=0750 loss=3.4463 wl=0.0880 d=0.7395 c=1.9459 ov=0.0000 proxy=1.2609 (ovlp=0, best=1.2585)  pcc[wl=+0.11 d=+0.96 c=+0.91]
+[place] surrogate vs exact (Pearson):  wl=+0.116  den=+0.959  cong=+0.910
+k=0 : score=1.2573, overlaps=0
+k=1 : score=1.2573, overlaps=0
+k=2 : score=1.2573, overlaps=0
+k=5 : score=1.2573, overlaps=0
+k=10 : score=1.2573, overlaps=0
+k=20 : score=1.2573, overlaps=0
+k=50 : score=1.2573, overlaps=0
+k=100 : score=1.2573, overlaps=0
+k=1000000000 : score=1.2573, overlaps=0
+[place] returning best snapshot: proxy=1.2573, overlaps=0
+[place] legalize-all-buckets (9 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_0       1.2573         0       1.2573           0   +0.0000 *
+  bucket_1       1.2573         0      SKIPPED (raw >= best legal 1.2573)
+  bucket_2       1.2573         0      SKIPPED (raw >= best legal 1.2573)
+  bucket_5       1.2573         0      SKIPPED (raw >= best legal 1.2573)
+  bucket_10      1.2573         0      SKIPPED (raw >= best legal 1.2573)
+  bucket_20      1.2573         0      SKIPPED (raw >= best legal 1.2573)
+  bucket_50      1.2573         0      SKIPPED (raw >= best legal 1.2573)
+  bucket_100     1.2573         0      SKIPPED (raw >= best legal 1.2573)
+  bucket_1000000000     1.2573         0      SKIPPED (raw >= best legal 1.2573)
+[place] winner: bucket_0 -> legal_proxy=1.2573 (raw 1.2573 with 0 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=301)
+[hill_climb] start: score=1.2573, 301 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=301, improvements=243, score=1.2365, delta this round=-0.0207
+[hill_climb] round 1: visited=301, improvements=173, score=1.2334, delta this round=-0.0031
+[hill_climb] round 2: visited=301, improvements=127, score=1.2325, delta this round=-0.0009
+[hill_climb] round 3: visited=301, improvements=91, score=1.2317, delta this round=-0.0008
+[hill_climb] round 4: visited=301, improvements=59, score=1.2313, delta this round=-0.0003
+[hill_climb] done: 110.1s, 1505 macros visited, 693 improvements, score: 1.2573 -> 1.2313 (-0.0260)
+[place] post-hill_climb: proxy=1.2313, overlaps=0, climb_delta=-0.0260
+proxy=1.2313  (wl=0.076 den=0.641 cong=1.669)  VALID  [121.38s]
+  ibm09... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm09/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 36, Row: 38
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm09/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 36, Row: 38
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=459
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=4.12, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0860 wl=0.0860 d=0.9900 c=1.6431 ov=0.3003 proxy=1.1126 (ovlp=101, best=1.1126)
+it=0050 loss=0.1425 wl=0.0762 d=1.2494 c=1.5725 ov=40.3544 proxy=1.2032 (ovlp=241, best=1.1126)
+it=0100 loss=0.4807 wl=0.0723 d=1.4934 c=1.4919 ov=55.6685 proxy=1.1809 (ovlp=246, best=1.1126)  pcc[wl=+0.97 d=+0.90 c=+0.79]
+it=0150 loss=0.8064 wl=0.0714 d=0.9632 c=1.4319 ov=45.3550 proxy=1.0955 (ovlp=239, best=1.0955)  pcc[wl=+0.82 d=+0.93 c=+0.88]
+it=0200 loss=1.1142 wl=0.0711 d=0.8420 c=1.3851 ov=40.5653 proxy=1.0502 (ovlp=238, best=1.0502)  pcc[wl=+0.56 d=+0.95 c=+0.90]
+it=0250 loss=1.4221 wl=0.0711 d=0.7778 c=1.3629 ov=37.7337 proxy=1.0167 (ovlp=237, best=1.0167)  pcc[wl=+0.31 d=+0.96 c=+0.92]
+it=0300 loss=1.7302 wl=0.0711 d=0.7428 c=1.3490 ov=36.1976 proxy=1.0188 (ovlp=227, best=1.0167)  pcc[wl=+0.13 d=+0.96 c=+0.90]
+it=0350 loss=2.7111 wl=0.0713 d=0.7329 c=1.3467 ov=1.0105 proxy=0.9714 (ovlp=34, best=0.9714)  pcc[wl=+0.01 d=+0.96 c=+0.84]
+it=0400 loss=3.0401 wl=0.0712 d=0.7180 c=1.3403 ov=0.3937 proxy=0.9650 (ovlp=2, best=0.9650)  pcc[wl=-0.07 d=+0.97 c=+0.83]
+it=0450 loss=3.0788 wl=0.0710 d=0.7120 c=1.3377 ov=0.2431 proxy=0.9682 (ovlp=1, best=0.9650)  pcc[wl=-0.13 d=+0.97 c=+0.84]
+it=0500 loss=2.9224 wl=0.0709 d=0.7076 c=1.3386 ov=0.1244 proxy=0.9616 (ovlp=1, best=0.9580)  pcc[wl=-0.17 d=+0.97 c=+0.84]
+it=0550 loss=2.6743 wl=0.0708 d=0.7046 c=1.3406 ov=0.0383 proxy=0.9617 (ovlp=1, best=0.9580)  pcc[wl=-0.21 d=+0.97 c=+0.85]
+it=0600 loss=2.4980 wl=0.0707 d=0.7028 c=1.3417 ov=0.0001 proxy=0.9620 (ovlp=0, best=0.9580)  pcc[wl=-0.24 d=+0.97 c=+0.85]
+it=0650 loss=2.5010 wl=0.0706 d=0.7016 c=1.3418 ov=0.0000 proxy=0.9611 (ovlp=0, best=0.9580)  pcc[wl=-0.26 d=+0.97 c=+0.85]
+it=0700 loss=2.4998 wl=0.0706 d=0.7007 c=1.3416 ov=0.0000 proxy=0.9626 (ovlp=0, best=0.9580)  pcc[wl=-0.28 d=+0.97 c=+0.86]
+it=0750 loss=2.4982 wl=0.0705 d=0.6999 c=1.3410 ov=0.0000 proxy=0.9653 (ovlp=0, best=0.9580)  pcc[wl=-0.30 d=+0.97 c=+0.86]
+[place] surrogate vs exact (Pearson):  wl=-0.317  den=+0.974  cong=+0.863
+k=0 : score=0.9597, overlaps=0
+k=1 : score=0.9580, overlaps=1
+k=2 : score=0.9580, overlaps=1
+k=5 : score=0.9580, overlaps=1
+k=10 : score=0.9580, overlaps=1
+k=20 : score=0.9580, overlaps=1
+k=50 : score=0.9580, overlaps=1
+k=100 : score=0.9580, overlaps=1
+k=1000000000 : score=0.9580, overlaps=1
+[place] returning best snapshot: proxy=0.9580, overlaps=1
+[place] legalize-all-buckets (9 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_1       0.9580         1       0.9580           0   -0.0000 *
+  bucket_2       0.9580         1      SKIPPED (raw >= best legal 0.9580)
+  bucket_5       0.9580         1      SKIPPED (raw >= best legal 0.9580)
+  bucket_10      0.9580         1      SKIPPED (raw >= best legal 0.9580)
+  bucket_20      0.9580         1      SKIPPED (raw >= best legal 0.9580)
+  bucket_50      0.9580         1      SKIPPED (raw >= best legal 0.9580)
+  bucket_100     0.9580         1      SKIPPED (raw >= best legal 0.9580)
+  bucket_1000000000     0.9580         1      SKIPPED (raw >= best legal 0.9580)
+  bucket_0       0.9597         0      SKIPPED (raw >= best legal 0.9580)
+[place] winner: bucket_1 -> legal_proxy=0.9580 (raw 0.9580 with 1 overlaps, degradation=-0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=253)
+[hill_climb] start: score=0.9580, 253 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=253, improvements=212, score=0.9097, delta this round=-0.0483
+[hill_climb] round 1: visited=253, improvements=168, score=0.9065, delta this round=-0.0032
+[hill_climb] round 2: visited=253, improvements=132, score=0.9053, delta this round=-0.0012
+[hill_climb] round 3: visited=253, improvements=98, score=0.9047, delta this round=-0.0006
+[hill_climb] round 4: visited=253, improvements=82, score=0.9045, delta this round=-0.0002
+[hill_climb] done: 95.2s, 1265 macros visited, 692 improvements, score: 0.9580 -> 0.9045 (-0.0534)
+[place] post-hill_climb: proxy=0.9045, overlaps=0, climb_delta=-0.0534
+proxy=0.9045  (wl=0.061 den=0.664 cong=1.023)  VALID  [104.52s]
+  ibm10... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm10/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 55, Row: 41
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm10/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 55, Row: 41
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=451
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=3.61, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.1024 wl=0.1024 d=0.7788 c=3.0997 ov=0.3289 proxy=1.3397 (ovlp=74, best=1.3397)
+it=0050 loss=0.2391 wl=0.0905 d=1.0494 c=3.0532 ov=112.8324 proxy=1.3764 (ovlp=303, best=1.3397)
+it=0100 loss=0.9796 wl=0.0871 d=1.0592 c=2.9810 ov=140.9580 proxy=1.3487 (ovlp=381, best=1.3397)  pcc[wl=+0.96 d=+0.99 c=+0.99]
+it=0150 loss=1.7198 wl=0.0859 d=0.7927 c=2.9359 ov=126.3996 proxy=1.3053 (ovlp=348, best=1.3053)  pcc[wl=+0.82 d=+0.97 c=+0.99]
+it=0200 loss=2.4544 wl=0.0849 d=0.7625 c=2.9061 ov=115.6330 proxy=1.2992 (ovlp=319, best=1.2992)  pcc[wl=+0.63 d=+0.98 c=+0.94]
+it=0250 loss=3.1839 wl=0.0842 d=0.7454 c=2.8850 ov=112.2149 proxy=1.2767 (ovlp=317, best=1.2767)  pcc[wl=+0.46 d=+0.98 c=+0.94]
+it=0300 loss=3.8974 wl=0.0837 d=0.7371 c=2.8559 ov=110.0527 proxy=1.2665 (ovlp=324, best=1.2665)  pcc[wl=+0.31 d=+0.98 c=+0.96]
+it=0350 loss=36.2554 wl=0.0833 d=0.6655 c=2.8197 ov=15.6360 proxy=1.2315 (ovlp=32, best=1.2315)  pcc[wl=+0.20 d=+0.98 c=+0.97]
+it=0400 loss=23.1712 wl=0.0830 d=0.6412 c=2.8262 ov=3.3347 proxy=1.2322 (ovlp=5, best=1.2315)  pcc[wl=+0.11 d=+0.98 c=+0.97]
+it=0450 loss=30.6016 wl=0.0828 d=0.6255 c=2.8320 ov=2.8946 proxy=1.2331 (ovlp=5, best=1.2315)  pcc[wl=+0.04 d=+0.98 c=+0.97]
+it=0500 loss=39.9230 wl=0.0827 d=0.6129 c=2.8319 ov=2.8565 proxy=1.2285 (ovlp=3, best=1.2285)  pcc[wl=-0.02 d=+0.98 c=+0.98]
+it=0550 loss=49.2594 wl=0.0827 d=0.6020 c=2.8365 ov=2.8356 proxy=1.2205 (ovlp=3, best=1.2205)  pcc[wl=-0.07 d=+0.98 c=+0.98]
+it=0600 loss=48.9027 wl=0.0826 d=0.5987 c=2.8384 ov=2.3048 proxy=1.2274 (ovlp=3, best=1.2205)  pcc[wl=-0.10 d=+0.98 c=+0.98]
+it=0650 loss=51.9967 wl=0.0825 d=0.5976 c=2.8388 ov=2.0928 proxy=1.2240 (ovlp=3, best=1.2174)  pcc[wl=-0.13 d=+0.99 c=+0.97]
+it=0700 loss=57.7568 wl=0.0825 d=0.5960 c=2.8393 ov=2.0449 proxy=1.2216 (ovlp=2, best=1.2174)  pcc[wl=-0.16 d=+0.99 c=+0.97]
+it=0750 loss=64.5702 wl=0.0824 d=0.5947 c=2.8394 ov=2.0449 proxy=1.2257 (ovlp=2, best=1.2174)  pcc[wl=-0.18 d=+0.99 c=+0.97]
+[place] surrogate vs exact (Pearson):  wl=-0.199  den=+0.987  cong=+0.975
+k=0 : score=inf, overlaps=None
+k=1 : score=inf, overlaps=None
+k=2 : score=1.2202, overlaps=2
+k=5 : score=1.2174, overlaps=3
+k=10 : score=1.2174, overlaps=3
+k=20 : score=1.2174, overlaps=3
+k=50 : score=1.2174, overlaps=3
+k=100 : score=1.2174, overlaps=3
+k=1000000000 : score=1.2174, overlaps=3
+[place] returning best snapshot: proxy=1.2174, overlaps=3
+[place] legalize-all-buckets (7 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_5       1.2174         3       1.2165           0   -0.0009 *
+  bucket_10      1.2174         3      SKIPPED (raw >= best legal 1.2165)
+  bucket_20      1.2174         3      SKIPPED (raw >= best legal 1.2165)
+  bucket_50      1.2174         3      SKIPPED (raw >= best legal 1.2165)
+  bucket_100     1.2174         3      SKIPPED (raw >= best legal 1.2165)
+  bucket_1000000000     1.2174         3      SKIPPED (raw >= best legal 1.2165)
+  bucket_2       1.2202         2      SKIPPED (raw >= best legal 1.2165)
+[place] winner: bucket_5 -> legal_proxy=1.2165 (raw 1.2174 with 3 overlaps, degradation=-0.0009)
+[place] hill_climb budget: 600s (base=600s, num_hard=786)
+[hill_climb] start: score=1.2165, 786 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=786, improvements=748, score=1.1566, delta this round=-0.0599
+[hill_climb] round 1: visited=763, improvements=638, score=1.1420, delta this round=-0.0146
+[hill_climb] time budget hit before round 2
+[hill_climb] done: 600.2s, 1549 macros visited, 1386 improvements, score: 1.2165 -> 1.1420 (-0.0745)
+[place] post-hill_climb: proxy=1.1420, overlaps=0, climb_delta=-0.0745
+proxy=1.1420  (wl=0.067 den=0.565 cong=1.584)  VALID  [634.60s]
+  ibm11... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm11/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 39, Row: 45
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm11/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 39, Row: 45
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=452
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=3.46, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0833 wl=0.0833 d=1.0176 c=1.9208 ov=0.4242 proxy=1.2141 (ovlp=129, best=1.2141)
+it=0050 loss=0.1515 wl=0.0745 d=1.3225 c=1.8303 ov=58.9903 proxy=1.3145 (ovlp=359, best=1.2141)
+it=0100 loss=0.5538 wl=0.0715 d=1.3333 c=1.8000 ov=85.1990 proxy=1.3012 (ovlp=357, best=1.2141)  pcc[wl=+0.92 d=+0.96 c=+0.76]
+it=0150 loss=0.9688 wl=0.0711 d=0.9830 c=1.7805 ov=88.4090 proxy=1.2165 (ovlp=375, best=1.2141)  pcc[wl=+0.55 d=+0.96 c=+0.78]
+it=0200 loss=1.3553 wl=0.0708 d=0.8518 c=1.7424 ov=78.6174 proxy=1.1675 (ovlp=362, best=1.1675)  pcc[wl=+0.18 d=+0.98 c=+0.86]
+it=0250 loss=1.7171 wl=0.0707 d=0.8010 c=1.6917 ov=70.4046 proxy=1.1292 (ovlp=342, best=1.1292)  pcc[wl=-0.04 d=+0.98 c=+0.92]
+it=0300 loss=2.0716 wl=0.0709 d=0.7671 c=1.6531 ov=66.0525 proxy=1.1050 (ovlp=331, best=1.1050)  pcc[wl=-0.16 d=+0.98 c=+0.94]
+it=0350 loss=4.9175 wl=0.0713 d=0.7666 c=1.6100 ov=2.6064 proxy=1.0516 (ovlp=59, best=1.0516)  pcc[wl=-0.22 d=+0.98 c=+0.91]
+it=0400 loss=4.9812 wl=0.0716 d=0.7497 c=1.5853 ov=0.8763 proxy=1.0402 (ovlp=2, best=1.0402)  pcc[wl=-0.25 d=+0.98 c=+0.93]
+it=0450 loss=6.0862 wl=0.0716 d=0.7425 c=1.5745 ov=0.8009 proxy=1.0350 (ovlp=3, best=1.0350)  pcc[wl=-0.26 d=+0.98 c=+0.94]
+it=0500 loss=7.2195 wl=0.0717 d=0.7378 c=1.5666 ov=0.7715 proxy=1.0351 (ovlp=1, best=1.0329)  pcc[wl=-0.27 d=+0.98 c=+0.95]
+it=0550 loss=8.4779 wl=0.0717 d=0.7347 c=1.5617 ov=0.7715 proxy=1.0315 (ovlp=1, best=1.0315)  pcc[wl=-0.28 d=+0.98 c=+0.96]
+it=0600 loss=9.7100 wl=0.0717 d=0.7326 c=1.5601 ov=0.7715 proxy=1.0286 (ovlp=1, best=1.0286)  pcc[wl=-0.28 d=+0.98 c=+0.96]
+it=0650 loss=10.9341 wl=0.0716 d=0.7318 c=1.5590 ov=0.7715 proxy=1.0310 (ovlp=1, best=1.0283)  pcc[wl=-0.29 d=+0.98 c=+0.96]
+it=0700 loss=12.1518 wl=0.0716 d=0.7313 c=1.5576 ov=0.7715 proxy=1.0317 (ovlp=1, best=1.0283)  pcc[wl=-0.29 d=+0.98 c=+0.97]
+it=0750 loss=13.3703 wl=0.0716 d=0.7309 c=1.5567 ov=0.7715 proxy=1.0327 (ovlp=1, best=1.0283)  pcc[wl=-0.29 d=+0.98 c=+0.97]
+[place] surrogate vs exact (Pearson):  wl=-0.299  den=+0.982  cong=+0.970
+k=0 : score=inf, overlaps=None
+k=1 : score=1.0283, overlaps=1
+k=2 : score=1.0283, overlaps=1
+k=5 : score=1.0283, overlaps=1
+k=10 : score=1.0283, overlaps=1
+k=20 : score=1.0283, overlaps=1
+k=50 : score=1.0283, overlaps=1
+k=100 : score=1.0283, overlaps=1
+k=1000000000 : score=1.0283, overlaps=1
+[place] returning best snapshot: proxy=1.0283, overlaps=1
+[place] legalize-all-buckets (8 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_1       1.0283         1       1.0277           0   -0.0006 *
+  bucket_2       1.0283         1      SKIPPED (raw >= best legal 1.0277)
+  bucket_5       1.0283         1      SKIPPED (raw >= best legal 1.0277)
+  bucket_10      1.0283         1      SKIPPED (raw >= best legal 1.0277)
+  bucket_20      1.0283         1      SKIPPED (raw >= best legal 1.0277)
+  bucket_50      1.0283         1      SKIPPED (raw >= best legal 1.0277)
+  bucket_100     1.0283         1      SKIPPED (raw >= best legal 1.0277)
+  bucket_1000000000     1.0283         1      SKIPPED (raw >= best legal 1.0277)
+[place] winner: bucket_1 -> legal_proxy=1.0277 (raw 1.0283 with 1 overlaps, degradation=-0.0006)
+[place] hill_climb budget: 600s (base=600s, num_hard=373)
+[hill_climb] start: score=1.0277, 373 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=373, improvements=313, score=0.9844, delta this round=-0.0433
+[hill_climb] round 1: visited=373, improvements=236, score=0.9786, delta this round=-0.0058
+[hill_climb] round 2: visited=373, improvements=207, score=0.9760, delta this round=-0.0026
+[hill_climb] round 3: visited=373, improvements=150, score=0.9753, delta this round=-0.0007
+[hill_climb] round 4: visited=373, improvements=109, score=0.9748, delta this round=-0.0005
+[hill_climb] done: 206.0s, 1865 macros visited, 1015 improvements, score: 1.0277 -> 0.9748 (-0.0529)
+[place] post-hill_climb: proxy=0.9748, overlaps=0, climb_delta=-0.0529
+proxy=0.9748  (wl=0.061 den=0.645 cong=1.182)  VALID  [220.62s]
+  ibm12... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm12/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 47, Row: 47
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm12/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 47, Row: 47
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=453
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=3.87, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0870 wl=0.0870 d=0.9933 c=3.2910 ov=0.6740 proxy=1.6251 (ovlp=187, best=1.6251)
+it=0050 loss=0.2131 wl=0.0791 d=1.2721 c=3.1883 ov=107.6730 proxy=1.6470 (ovlp=525, best=1.6251)
+it=0100 loss=0.9044 wl=0.0758 d=1.2185 c=3.1904 ov=156.0723 proxy=1.6170 (ovlp=680, best=1.6170)  pcc[wl=+0.87 d=+0.95 c=+0.91]
+it=0150 loss=1.6212 wl=0.0751 d=0.9148 c=3.2001 ov=155.5139 proxy=1.5773 (ovlp=656, best=1.5773)  pcc[wl=+0.32 d=+0.83 c=+0.89]
+it=0200 loss=2.3498 wl=0.0746 d=0.8582 c=3.2192 ov=157.8595 proxy=1.5696 (ovlp=657, best=1.5692)  pcc[wl=-0.09 d=+0.86 c=+0.83]
+it=0250 loss=3.0528 wl=0.0743 d=0.8265 c=3.2005 ov=150.9228 proxy=1.5577 (ovlp=666, best=1.5577)  pcc[wl=-0.29 d=+0.89 c=+0.82]
+it=0300 loss=3.7395 wl=0.0742 d=0.7985 c=3.1756 ov=143.8362 proxy=1.5374 (ovlp=653, best=1.5374)  pcc[wl=-0.40 d=+0.91 c=+0.83]
+it=0350 loss=30.2573 wl=0.0740 d=0.7993 c=3.0639 ov=15.4639 proxy=1.4729 (ovlp=191, best=1.4729)  pcc[wl=-0.46 d=+0.92 c=+0.88]
+it=0400 loss=20.7620 wl=0.0740 d=0.7835 c=3.0479 ov=3.5602 proxy=1.4591 (ovlp=36, best=1.4591)  pcc[wl=-0.50 d=+0.92 c=+0.93]
+it=0450 loss=22.9114 wl=0.0739 d=0.7732 c=3.0506 ov=2.4868 proxy=1.4551 (ovlp=13, best=1.4551)  pcc[wl=-0.53 d=+0.92 c=+0.94]
+it=0500 loss=29.3198 wl=0.0738 d=0.7609 c=3.0507 ov=2.4367 proxy=1.4492 (ovlp=5, best=1.4492)  pcc[wl=-0.56 d=+0.92 c=+0.95]
+it=0550 loss=36.0486 wl=0.0738 d=0.7522 c=3.0497 ov=2.4336 proxy=1.4510 (ovlp=4, best=1.4482)  pcc[wl=-0.57 d=+0.93 c=+0.96]
+it=0600 loss=42.7724 wl=0.0738 d=0.7458 c=3.0490 ov=2.4333 proxy=1.4456 (ovlp=3, best=1.4443)  pcc[wl=-0.59 d=+0.93 c=+0.96]
+it=0650 loss=49.4919 wl=0.0737 d=0.7430 c=3.0483 ov=2.4333 proxy=1.4433 (ovlp=3, best=1.4433)  pcc[wl=-0.60 d=+0.93 c=+0.97]
+it=0700 loss=56.2063 wl=0.0737 d=0.7403 c=3.0482 ov=2.4333 proxy=1.4455 (ovlp=3, best=1.4433)  pcc[wl=-0.61 d=+0.93 c=+0.97]
+it=0750 loss=62.9210 wl=0.0737 d=0.7377 c=3.0482 ov=2.4333 proxy=1.4428 (ovlp=3, best=1.4428)  pcc[wl=-0.62 d=+0.93 c=+0.97]
+[place] surrogate vs exact (Pearson):  wl=-0.625  den=+0.936  cong=+0.970
+k=0 : score=inf, overlaps=None
+k=1 : score=inf, overlaps=None
+k=2 : score=inf, overlaps=None
+k=5 : score=1.4392, overlaps=3
+k=10 : score=1.4392, overlaps=3
+k=20 : score=1.4392, overlaps=3
+k=50 : score=1.4392, overlaps=3
+k=100 : score=1.4392, overlaps=3
+k=1000000000 : score=1.4392, overlaps=3
+[place] returning best snapshot: proxy=1.4392, overlaps=3
+[place] legalize-all-buckets (6 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_5       1.4392         3       1.4816           0   +0.0424 *
+  bucket_10      1.4392         3       1.4816           0   +0.0424
+  bucket_20      1.4392         3       1.4816           0   +0.0424
+  bucket_50      1.4392         3       1.4816           0   +0.0424
+  bucket_100     1.4392         3       1.4816           0   +0.0424
+  bucket_1000000000     1.4392         3       1.4816           0   +0.0424
+[place] winner: bucket_5 -> legal_proxy=1.4816 (raw 1.4392 with 3 overlaps, degradation=+0.0424)
+[place] hill_climb budget: 600s (base=600s, num_hard=651)
+[hill_climb] start: score=1.4816, 651 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=651, improvements=482, score=1.4545, delta this round=-0.0271
+[hill_climb] round 1: visited=651, improvements=355, score=1.4345, delta this round=-0.0199
+[hill_climb] round 2: visited=651, improvements=308, score=1.4097, delta this round=-0.0249
+[hill_climb] round 3: visited=651, improvements=285, score=1.4062, delta this round=-0.0035
+[hill_climb] round 4: visited=260, improvements=84, score=1.4057, delta this round=-0.0005
+[hill_climb] done: 600.2s, 2864 macros visited, 1514 improvements, score: 1.4816 -> 1.4057 (-0.0759)
+[place] post-hill_climb: proxy=1.4057, overlaps=0, climb_delta=-0.0759
+proxy=1.4057  (wl=0.068 den=0.674 cong=2.001)  VALID  [641.28s]
+  ibm13... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm13/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 43, Row: 43
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm13/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 43, Row: 43
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=454
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=4.69, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0846 wl=0.0846 d=1.0284 c=2.0628 ov=0.5277 proxy=1.3854 (ovlp=180, best=1.3854)
+it=0050 loss=0.1583 wl=0.0748 d=1.5080 c=1.9840 ov=84.5120 proxy=1.4648 (ovlp=403, best=1.3854)
+it=0100 loss=0.5722 wl=0.0708 d=1.3847 c=1.8714 ov=89.7687 proxy=1.4180 (ovlp=420, best=1.3854)  pcc[wl=+0.96 d=+0.90 c=+0.99]
+it=0150 loss=0.9901 wl=0.0701 d=1.0705 c=1.8154 ov=90.4614 proxy=1.3187 (ovlp=427, best=1.3187)  pcc[wl=+0.72 d=+0.87 c=+0.98]
+it=0200 loss=1.3931 wl=0.0700 d=0.9495 c=1.7827 ov=82.6933 proxy=1.2739 (ovlp=417, best=1.2739)  pcc[wl=+0.37 d=+0.91 c=+0.97]
+it=0250 loss=1.7921 wl=0.0700 d=0.8987 c=1.7600 ov=77.3584 proxy=1.2401 (ovlp=404, best=1.2401)  pcc[wl=+0.12 d=+0.94 c=+0.97]
+it=0300 loss=2.1850 wl=0.0700 d=0.8702 c=1.7394 ov=74.8676 proxy=1.2139 (ovlp=395, best=1.2139)  pcc[wl=-0.03 d=+0.95 c=+0.97]
+it=0350 loss=4.5951 wl=0.0701 d=0.8550 c=1.7172 ov=1.8534 proxy=1.1681 (ovlp=52, best=1.1681)  pcc[wl=-0.12 d=+0.95 c=+0.97]
+it=0400 loss=5.1876 wl=0.0704 d=0.7870 c=1.7100 ov=0.7759 proxy=1.1522 (ovlp=3, best=1.1522)  pcc[wl=-0.17 d=+0.96 c=+0.97]
+it=0450 loss=6.5997 wl=0.0705 d=0.7690 c=1.7052 ov=0.7720 proxy=1.1489 (ovlp=1, best=1.1485)  pcc[wl=-0.20 d=+0.96 c=+0.98]
+it=0500 loss=8.0247 wl=0.0706 d=0.7596 c=1.7025 ov=0.7717 proxy=1.1447 (ovlp=1, best=1.1447)  pcc[wl=-0.23 d=+0.97 c=+0.98]
+it=0550 loss=9.4528 wl=0.0706 d=0.7511 c=1.7016 ov=0.7717 proxy=1.1437 (ovlp=1, best=1.1429)  pcc[wl=-0.24 d=+0.97 c=+0.98]
+it=0600 loss=10.8531 wl=0.0705 d=0.7468 c=1.7024 ov=0.7717 proxy=1.1413 (ovlp=1, best=1.1413)  pcc[wl=-0.26 d=+0.97 c=+0.98]
+it=0650 loss=12.2441 wl=0.0705 d=0.7440 c=1.7026 ov=0.7717 proxy=1.1380 (ovlp=1, best=1.1380)  pcc[wl=-0.27 d=+0.97 c=+0.98]
+it=0700 loss=13.6291 wl=0.0704 d=0.7418 c=1.7020 ov=0.7717 proxy=1.1291 (ovlp=1, best=1.1291)  pcc[wl=-0.28 d=+0.97 c=+0.98]
+it=0750 loss=15.0153 wl=0.0704 d=0.7397 c=1.7021 ov=0.7717 proxy=1.1326 (ovlp=1, best=1.1286)  pcc[wl=-0.29 d=+0.97 c=+0.98]
+[place] surrogate vs exact (Pearson):  wl=-0.294  den=+0.973  cong=+0.983
+k=0 : score=inf, overlaps=None
+k=1 : score=1.1286, overlaps=1
+k=2 : score=1.1286, overlaps=1
+k=5 : score=1.1286, overlaps=1
+k=10 : score=1.1286, overlaps=1
+k=20 : score=1.1286, overlaps=1
+k=50 : score=1.1286, overlaps=1
+k=100 : score=1.1286, overlaps=1
+k=1000000000 : score=1.1286, overlaps=1
+[place] returning best snapshot: proxy=1.1286, overlaps=1
+[place] legalize-all-buckets (8 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_1       1.1286         1       1.1286           0   +0.0000 *
+  bucket_2       1.1286         1       1.1286           0   +0.0000
+  bucket_5       1.1286         1       1.1286           0   +0.0000
+  bucket_10      1.1286         1       1.1286           0   +0.0000
+  bucket_20      1.1286         1       1.1286           0   +0.0000
+  bucket_50      1.1286         1       1.1286           0   +0.0000
+  bucket_100     1.1286         1       1.1286           0   +0.0000
+  bucket_1000000000     1.1286         1       1.1286           0   +0.0000
+[place] winner: bucket_1 -> legal_proxy=1.1286 (raw 1.1286 with 1 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=424)
+[hill_climb] start: score=1.1286, 424 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=424, improvements=369, score=1.0963, delta this round=-0.0323
+[hill_climb] round 1: visited=424, improvements=302, score=1.0909, delta this round=-0.0054
+[hill_climb] round 2: visited=424, improvements=252, score=1.0810, delta this round=-0.0098
+[hill_climb] round 3: visited=424, improvements=224, score=1.0794, delta this round=-0.0016
+[hill_climb] round 4: visited=424, improvements=186, score=1.0770, delta this round=-0.0025
+[hill_climb] done: 346.1s, 2120 macros visited, 1333 improvements, score: 1.1286 -> 1.0770 (-0.0516)
+[place] post-hill_climb: proxy=1.0770, overlaps=0, climb_delta=-0.0516
+proxy=1.0770  (wl=0.061 den=0.685 cong=1.348)  VALID  [376.73s]
+  ibm14... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm14/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 49, Row: 44
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm14/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 49, Row: 44
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=455
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=9.17, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0827 wl=0.0827 d=1.2052 c=2.4914 ov=0.4541 proxy=1.5938 (ovlp=189, best=1.5938)
+it=0050 loss=0.1761 wl=0.0740 d=1.1451 c=2.4255 ov=65.8712 proxy=1.6780 (ovlp=461, best=1.5938)
+it=0100 loss=0.6777 wl=0.0708 d=1.4285 c=2.2913 ov=58.9436 proxy=1.6023 (ovlp=448, best=1.5938)  pcc[wl=+0.93 d=+0.43 c=+0.98]
+it=0150 loss=1.1878 wl=0.0702 d=1.0830 c=2.2472 ov=85.9674 proxy=1.4638 (ovlp=482, best=1.4638)  pcc[wl=+0.49 d=+0.69 c=+0.98]
+it=0200 loss=1.6918 wl=0.0698 d=1.0661 c=2.2113 ov=98.3608 proxy=1.3970 (ovlp=509, best=1.3970)  pcc[wl=+0.09 d=+0.80 c=+0.96]
+it=0250 loss=2.1850 wl=0.0694 d=1.0419 c=2.1831 ov=98.4292 proxy=1.3729 (ovlp=509, best=1.3729)  pcc[wl=-0.14 d=+0.85 c=+0.94]
+it=0300 loss=2.6706 wl=0.0693 d=1.0237 c=2.1590 ov=96.8633 proxy=1.3666 (ovlp=512, best=1.3666)  pcc[wl=-0.27 d=+0.87 c=+0.92]
+it=0350 loss=7.7392 wl=0.0697 d=0.8770 c=2.1394 ov=2.9215 proxy=1.3662 (ovlp=107, best=1.3593)  pcc[wl=-0.34 d=+0.87 c=+0.92]
+it=0400 loss=5.5552 wl=0.0699 d=0.8795 c=2.1332 ov=0.4666 proxy=1.3468 (ovlp=3, best=1.3468)  pcc[wl=-0.37 d=+0.87 c=+0.92]
+it=0450 loss=6.8342 wl=0.0697 d=0.8967 c=2.1268 ov=0.4688 proxy=1.3369 (ovlp=2, best=1.3369)  pcc[wl=-0.39 d=+0.89 c=+0.92]
+it=0500 loss=8.0587 wl=0.0696 d=0.9079 c=2.1230 ov=0.4637 proxy=1.3500 (ovlp=1, best=1.3369)  pcc[wl=-0.41 d=+0.90 c=+0.92]
+it=0550 loss=9.3221 wl=0.0695 d=0.9193 c=2.1214 ov=0.4637 proxy=1.3461 (ovlp=1, best=1.3369)  pcc[wl=-0.43 d=+0.90 c=+0.91]
+it=0600 loss=10.5468 wl=0.0694 d=0.9281 c=2.1206 ov=0.4637 proxy=1.3416 (ovlp=1, best=1.3369)  pcc[wl=-0.45 d=+0.91 c=+0.91]
+it=0650 loss=11.7595 wl=0.0693 d=0.9316 c=2.1204 ov=0.4637 proxy=1.3448 (ovlp=1, best=1.3369)  pcc[wl=-0.47 d=+0.91 c=+0.91]
+it=0700 loss=12.9674 wl=0.0692 d=0.9334 c=2.1204 ov=0.4637 proxy=1.3460 (ovlp=1, best=1.3369)  pcc[wl=-0.48 d=+0.91 c=+0.91]
+it=0750 loss=14.1753 wl=0.0692 d=0.9355 c=2.1204 ov=0.4637 proxy=1.3441 (ovlp=1, best=1.3369)  pcc[wl=-0.49 d=+0.91 c=+0.91]
+[place] surrogate vs exact (Pearson):  wl=-0.499  den=+0.916  cong=+0.907
+k=0 : score=inf, overlaps=None
+k=1 : score=1.3399, overlaps=1
+k=2 : score=1.3369, overlaps=2
+k=5 : score=1.3369, overlaps=2
+k=10 : score=1.3369, overlaps=2
+k=20 : score=1.3369, overlaps=2
+k=50 : score=1.3369, overlaps=2
+k=100 : score=1.3369, overlaps=2
+k=1000000000 : score=1.3369, overlaps=2
+[place] returning best snapshot: proxy=1.3369, overlaps=2
+[place] legalize-all-buckets (8 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_2       1.3369         2       1.3369           0   +0.0000 *
+  bucket_5       1.3369         2       1.3369           0   +0.0000
+  bucket_10      1.3369         2       1.3369           0   +0.0000
+  bucket_20      1.3369         2       1.3369           0   +0.0000
+  bucket_50      1.3369         2       1.3369           0   +0.0000
+  bucket_100     1.3369         2       1.3369           0   +0.0000
+  bucket_1000000000     1.3369         2       1.3369           0   +0.0000
+  bucket_1       1.3399         1      SKIPPED (raw >= best legal 1.3369)
+[place] winner: bucket_2 -> legal_proxy=1.3369 (raw 1.3369 with 2 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=614)
+[hill_climb] start: score=1.3369, 614 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=614, improvements=487, score=1.3023, delta this round=-0.0347
+[hill_climb] round 1: visited=614, improvements=361, score=1.2970, delta this round=-0.0052
+[hill_climb] round 2: visited=614, improvements=282, score=1.2955, delta this round=-0.0015
+[hill_climb] round 3: visited=140, improvements=45, score=1.2953, delta this round=-0.0002
+[hill_climb] time budget hit before round 4
+[hill_climb] done: 600.3s, 1982 macros visited, 1175 improvements, score: 1.3369 -> 1.2953 (-0.0416)
+[place] post-hill_climb: proxy=1.2953, overlaps=0, climb_delta=-0.0416
+proxy=1.2953  (wl=0.058 den=0.668 cong=1.807)  VALID  [640.84s]
+  ibm15... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm15/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 57, Row: 38
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm15/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 57, Row: 38
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=456
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=3.61, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0926 wl=0.0926 d=1.2208 c=2.4205 ov=0.4387 proxy=1.6033 (ovlp=165, best=1.6033)
+it=0050 loss=0.1834 wl=0.0839 d=1.4711 c=2.3637 ov=54.7438 proxy=1.6293 (ovlp=377, best=1.6009)
+it=0100 loss=0.6855 wl=0.0803 d=1.3401 c=2.2921 ov=58.5297 proxy=1.5837 (ovlp=391, best=1.5837)  pcc[wl=+0.96 d=+0.81 c=+0.98]
+it=0150 loss=1.1951 wl=0.0797 d=0.9569 c=2.2632 ov=62.1465 proxy=1.4999 (ovlp=369, best=1.4999)  pcc[wl=+0.65 d=+0.89 c=+0.96]
+it=0200 loss=1.7021 wl=0.0794 d=0.8404 c=2.2558 ov=59.3499 proxy=1.4617 (ovlp=376, best=1.4617)  pcc[wl=+0.25 d=+0.95 c=+0.95]
+it=0250 loss=2.2209 wl=0.0792 d=0.8431 c=2.2536 ov=63.0145 proxy=1.4379 (ovlp=376, best=1.4379)  pcc[wl=-0.00 d=+0.96 c=+0.92]
+it=0300 loss=2.7385 wl=0.0789 d=0.8505 c=2.2500 ov=66.5259 proxy=1.4273 (ovlp=385, best=1.4273)  pcc[wl=-0.15 d=+0.95 c=+0.87]
+it=0350 loss=4.9637 wl=0.0789 d=0.7761 c=2.2281 ov=1.7318 proxy=1.4134 (ovlp=55, best=1.4134)  pcc[wl=-0.24 d=+0.95 c=+0.87]
+it=0400 loss=3.7104 wl=0.0791 d=0.7507 c=2.2230 ov=0.0036 proxy=1.4189 (ovlp=3, best=1.4124)  pcc[wl=-0.30 d=+0.96 c=+0.87]
+it=0450 loss=3.7424 wl=0.0791 d=0.7486 c=2.2207 ov=0.0000 proxy=1.4070 (ovlp=0, best=1.4070)  pcc[wl=-0.34 d=+0.96 c=+0.87]
+it=0500 loss=3.7950 wl=0.0791 d=0.7554 c=2.2240 ov=0.0000 proxy=1.3973 (ovlp=0, best=1.3973)  pcc[wl=-0.36 d=+0.96 c=+0.87]
+it=0550 loss=3.8421 wl=0.0790 d=0.7530 c=2.2264 ov=0.0000 proxy=1.3920 (ovlp=0, best=1.3920)  pcc[wl=-0.39 d=+0.96 c=+0.87]
+it=0600 loss=3.8566 wl=0.0790 d=0.7520 c=2.2280 ov=0.0000 proxy=1.3836 (ovlp=0, best=1.3836)  pcc[wl=-0.40 d=+0.96 c=+0.87]
+it=0650 loss=3.8612 wl=0.0790 d=0.7516 c=2.2285 ov=0.0000 proxy=1.3856 (ovlp=0, best=1.3836)  pcc[wl=-0.42 d=+0.96 c=+0.87]
+it=0700 loss=3.8623 wl=0.0790 d=0.7513 c=2.2295 ov=0.0000 proxy=1.3853 (ovlp=0, best=1.3836)  pcc[wl=-0.43 d=+0.96 c=+0.87]
+it=0750 loss=3.8640 wl=0.0790 d=0.7512 c=2.2306 ov=0.0000 proxy=1.3860 (ovlp=0, best=1.3836)  pcc[wl=-0.44 d=+0.96 c=+0.87]
+[place] surrogate vs exact (Pearson):  wl=-0.446  den=+0.961  cong=+0.868
+k=0 : score=1.3780, overlaps=0
+k=1 : score=1.3780, overlaps=0
+k=2 : score=1.3780, overlaps=0
+k=5 : score=1.3780, overlaps=0
+k=10 : score=1.3780, overlaps=0
+k=20 : score=1.3780, overlaps=0
+k=50 : score=1.3780, overlaps=0
+k=100 : score=1.3780, overlaps=0
+k=1000000000 : score=1.3780, overlaps=0
+[place] returning best snapshot: proxy=1.3780, overlaps=0
+[place] legalize-all-buckets (9 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_0       1.3780         0       1.3780           0   +0.0000 *
+  bucket_1       1.3780         0      SKIPPED (raw >= best legal 1.3780)
+  bucket_2       1.3780         0      SKIPPED (raw >= best legal 1.3780)
+  bucket_5       1.3780         0      SKIPPED (raw >= best legal 1.3780)
+  bucket_10      1.3780         0      SKIPPED (raw >= best legal 1.3780)
+  bucket_20      1.3780         0      SKIPPED (raw >= best legal 1.3780)
+  bucket_50      1.3780         0      SKIPPED (raw >= best legal 1.3780)
+  bucket_100     1.3780         0      SKIPPED (raw >= best legal 1.3780)
+  bucket_1000000000     1.3780         0      SKIPPED (raw >= best legal 1.3780)
+[place] winner: bucket_0 -> legal_proxy=1.3780 (raw 1.3780 with 0 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=393)
+[hill_climb] start: score=1.3780, 393 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=393, improvements=309, score=1.3456, delta this round=-0.0324
+[hill_climb] round 1: visited=393, improvements=217, score=1.3419, delta this round=-0.0037
+[hill_climb] round 2: visited=393, improvements=187, score=1.3405, delta this round=-0.0014
+[hill_climb] round 3: visited=393, improvements=182, score=1.3394, delta this round=-0.0011
+[hill_climb] round 4: visited=393, improvements=167, score=1.3388, delta this round=-0.0006
+[hill_climb] done: 327.8s, 1965 macros visited, 1062 improvements, score: 1.3780 -> 1.3388 (-0.0392)
+[place] post-hill_climb: proxy=1.3388, overlaps=0, climb_delta=-0.0392
+proxy=1.3388  (wl=0.066 den=0.617 cong=1.929)  VALID  [353.32s]
+  ibm16... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm16/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 45, Row: 48
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm16/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 45, Row: 48
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=457
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=4.47, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0814 wl=0.0814 d=1.0911 c=3.4083 ov=0.3785 proxy=1.4911 (ovlp=86, best=1.4911)
+it=0050 loss=0.2131 wl=0.0736 d=1.2788 c=3.3176 ov=104.1346 proxy=1.5434 (ovlp=274, best=1.4911)
+it=0100 loss=0.9101 wl=0.0707 d=1.2998 c=3.2272 ov=171.5720 proxy=1.4744 (ovlp=310, best=1.4744)  pcc[wl=+0.86 d=+0.98 c=+0.94]
+it=0150 loss=1.6290 wl=0.0701 d=1.0112 c=3.2126 ov=169.1167 proxy=1.4363 (ovlp=337, best=1.4363)  pcc[wl=+0.25 d=+0.86 c=+0.96]
+it=0200 loss=2.3349 wl=0.0698 d=0.9333 c=3.1893 ov=167.5949 proxy=1.4145 (ovlp=349, best=1.4145)  pcc[wl=-0.14 d=+0.89 c=+0.95]
+it=0250 loss=3.0032 wl=0.0696 d=0.8772 c=3.1372 ov=158.9961 proxy=1.3745 (ovlp=331, best=1.3745)  pcc[wl=-0.31 d=+0.93 c=+0.95]
+it=0300 loss=3.6766 wl=0.0695 d=0.8544 c=3.1065 ov=154.4541 proxy=1.3620 (ovlp=328, best=1.3620)  pcc[wl=-0.40 d=+0.95 c=+0.95]
+it=0350 loss=22.1519 wl=0.0696 d=0.8421 c=3.0225 ov=15.1466 proxy=1.3045 (ovlp=53, best=1.3045)  pcc[wl=-0.45 d=+0.95 c=+0.96]
+it=0400 loss=5.4702 wl=0.0696 d=0.8262 c=3.0173 ov=0.1709 proxy=1.2989 (ovlp=10, best=1.2971)  pcc[wl=-0.48 d=+0.95 c=+0.97]
+it=0450 loss=4.9784 wl=0.0697 d=0.8119 c=3.0121 ov=0.0000 proxy=1.2996 (ovlp=0, best=1.2971)  pcc[wl=-0.50 d=+0.95 c=+0.97]
+it=0500 loss=5.0323 wl=0.0697 d=0.7996 c=3.0163 ov=0.0000 proxy=1.2951 (ovlp=0, best=1.2951)  pcc[wl=-0.51 d=+0.95 c=+0.97]
+it=0550 loss=5.0826 wl=0.0697 d=0.7885 c=3.0191 ov=0.0000 proxy=1.2965 (ovlp=0, best=1.2904)  pcc[wl=-0.52 d=+0.96 c=+0.98]
+it=0600 loss=5.1011 wl=0.0697 d=0.7825 c=3.0220 ov=0.0000 proxy=1.2931 (ovlp=0, best=1.2904)  pcc[wl=-0.52 d=+0.96 c=+0.98]
+it=0650 loss=5.1098 wl=0.0697 d=0.7792 c=3.0242 ov=0.0000 proxy=1.2924 (ovlp=0, best=1.2904)  pcc[wl=-0.53 d=+0.96 c=+0.98]
+it=0700 loss=5.1097 wl=0.0696 d=0.7768 c=3.0252 ov=0.0000 proxy=1.2917 (ovlp=0, best=1.2904)  pcc[wl=-0.54 d=+0.96 c=+0.98]
+it=0750 loss=5.1106 wl=0.0696 d=0.7742 c=3.0268 ov=0.0000 proxy=1.2946 (ovlp=0, best=1.2904)  pcc[wl=-0.54 d=+0.96 c=+0.98]
+[place] surrogate vs exact (Pearson):  wl=-0.547  den=+0.964  cong=+0.978
+k=0 : score=1.2882, overlaps=0
+k=1 : score=1.2882, overlaps=0
+k=2 : score=1.2882, overlaps=0
+k=5 : score=1.2882, overlaps=0
+k=10 : score=1.2882, overlaps=0
+k=20 : score=1.2882, overlaps=0
+k=50 : score=1.2882, overlaps=0
+k=100 : score=1.2882, overlaps=0
+k=1000000000 : score=1.2882, overlaps=0
+[place] returning best snapshot: proxy=1.2882, overlaps=0
+[place] legalize-all-buckets (9 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_0       1.2882         0       1.2882           0   +0.0000 *
+  bucket_1       1.2882         0      SKIPPED (raw >= best legal 1.2882)
+  bucket_2       1.2882         0      SKIPPED (raw >= best legal 1.2882)
+  bucket_5       1.2882         0      SKIPPED (raw >= best legal 1.2882)
+  bucket_10      1.2882         0      SKIPPED (raw >= best legal 1.2882)
+  bucket_20      1.2882         0      SKIPPED (raw >= best legal 1.2882)
+  bucket_50      1.2882         0      SKIPPED (raw >= best legal 1.2882)
+  bucket_100     1.2882         0      SKIPPED (raw >= best legal 1.2882)
+  bucket_1000000000     1.2882         0      SKIPPED (raw >= best legal 1.2882)
+[place] winner: bucket_0 -> legal_proxy=1.2882 (raw 1.2882 with 0 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=458)
+[hill_climb] start: score=1.2882, 458 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=458, improvements=404, score=1.2528, delta this round=-0.0354
+[hill_climb] round 1: visited=458, improvements=311, score=1.2490, delta this round=-0.0039
+[hill_climb] round 2: visited=458, improvements=251, score=1.2470, delta this round=-0.0020
+[hill_climb] round 3: visited=458, improvements=223, score=1.2460, delta this round=-0.0010
+[hill_climb] round 4: visited=458, improvements=176, score=1.2399, delta this round=-0.0060
+[hill_climb] done: 462.0s, 2290 macros visited, 1365 improvements, score: 1.2882 -> 1.2399 (-0.0482)
+[place] post-hill_climb: proxy=1.2399, overlaps=0, climb_delta=-0.0482
+proxy=1.2399  (wl=0.057 den=0.656 cong=1.710)  VALID  [521.25s]
+  ibm17... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm17/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 51, Row: 44
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm17/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 51, Row: 44
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=458
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=4.00, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0853 wl=0.0853 d=1.1847 c=3.3145 ov=0.6262 proxy=1.7392 (ovlp=231, best=1.7392)
+it=0050 loss=0.2133 wl=0.0773 d=1.1188 c=3.2378 ov=120.4576 proxy=1.7927 (ovlp=642, best=1.7392)
+it=0100 loss=0.8924 wl=0.0742 d=1.3523 c=3.1415 ov=77.7122 proxy=1.7660 (ovlp=543, best=1.7392)  pcc[wl=+0.86 d=+0.33 c=+1.00]
+it=0150 loss=1.5497 wl=0.0732 d=1.0867 c=3.0266 ov=123.3359 proxy=1.6569 (ovlp=680, best=1.6569)  pcc[wl=+0.28 d=+0.59 c=+0.91]
+it=0200 loss=2.1849 wl=0.0726 d=1.0414 c=2.9467 ov=145.6528 proxy=1.5808 (ovlp=724, best=1.5808)  pcc[wl=-0.13 d=+0.78 c=+0.86]
+it=0250 loss=2.8061 wl=0.0722 d=1.0101 c=2.8894 ov=149.0866 proxy=1.5296 (ovlp=720, best=1.5296)  pcc[wl=-0.32 d=+0.86 c=+0.92]
+it=0300 loss=3.4121 wl=0.0721 d=0.9687 c=2.8438 ov=141.8713 proxy=1.5240 (ovlp=730, best=1.5240)  pcc[wl=-0.43 d=+0.89 c=+0.93]
+it=0350 loss=17.0561 wl=0.0724 d=0.8411 c=2.8051 ov=6.6748 proxy=1.5121 (ovlp=198, best=1.5109)  pcc[wl=-0.48 d=+0.89 c=+0.94]
+it=0400 loss=5.1555 wl=0.0724 d=0.8328 c=2.7933 ov=0.1089 proxy=1.5036 (ovlp=10, best=1.5036)  pcc[wl=-0.51 d=+0.88 c=+0.95]
+it=0450 loss=4.6931 wl=0.0723 d=0.8381 c=2.7862 ov=0.0069 proxy=1.4907 (ovlp=3, best=1.4907)  pcc[wl=-0.53 d=+0.89 c=+0.96]
+it=0500 loss=4.7193 wl=0.0723 d=0.8382 c=2.7819 ov=0.0033 proxy=1.4891 (ovlp=2, best=1.4849)  pcc[wl=-0.55 d=+0.90 c=+0.96]
+it=0550 loss=4.7302 wl=0.0723 d=0.8402 c=2.7791 ov=0.0000 proxy=1.4878 (ovlp=0, best=1.4849)  pcc[wl=-0.56 d=+0.91 c=+0.96]
+it=0600 loss=4.7440 wl=0.0722 d=0.8397 c=2.7777 ov=0.0000 proxy=1.4780 (ovlp=0, best=1.4780)  pcc[wl=-0.57 d=+0.92 c=+0.96]
+it=0650 loss=4.7469 wl=0.0722 d=0.8372 c=2.7764 ov=0.0000 proxy=1.4830 (ovlp=0, best=1.4780)  pcc[wl=-0.58 d=+0.92 c=+0.96]
+it=0700 loss=4.7435 wl=0.0722 d=0.8348 c=2.7749 ov=0.0000 proxy=1.4755 (ovlp=0, best=1.4755)  pcc[wl=-0.59 d=+0.93 c=+0.97]
+it=0750 loss=4.7397 wl=0.0722 d=0.8319 c=2.7731 ov=0.0000 proxy=1.4751 (ovlp=0, best=1.4751)  pcc[wl=-0.59 d=+0.93 c=+0.97]
+[place] surrogate vs exact (Pearson):  wl=-0.598  den=+0.932  cong=+0.968
+k=0 : score=1.4731, overlaps=0
+k=1 : score=1.4731, overlaps=0
+k=2 : score=1.4731, overlaps=0
+k=5 : score=1.4731, overlaps=0
+k=10 : score=1.4731, overlaps=0
+k=20 : score=1.4731, overlaps=0
+k=50 : score=1.4731, overlaps=0
+k=100 : score=1.4731, overlaps=0
+k=1000000000 : score=1.4731, overlaps=0
+[place] returning best snapshot: proxy=1.4731, overlaps=0
+[place] legalize-all-buckets (9 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_0       1.4731         0       1.4731           0   +0.0000 *
+  bucket_1       1.4731         0      SKIPPED (raw >= best legal 1.4731)
+  bucket_2       1.4731         0      SKIPPED (raw >= best legal 1.4731)
+  bucket_5       1.4731         0      SKIPPED (raw >= best legal 1.4731)
+  bucket_10      1.4731         0      SKIPPED (raw >= best legal 1.4731)
+  bucket_20      1.4731         0      SKIPPED (raw >= best legal 1.4731)
+  bucket_50      1.4731         0      SKIPPED (raw >= best legal 1.4731)
+  bucket_100     1.4731         0      SKIPPED (raw >= best legal 1.4731)
+  bucket_1000000000     1.4731         0      SKIPPED (raw >= best legal 1.4731)
+[place] winner: bucket_0 -> legal_proxy=1.4731 (raw 1.4731 with 0 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=760)
+[hill_climb] start: score=1.4731, 760 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=760, improvements=613, score=1.4558, delta this round=-0.0173
+[hill_climb] round 1: visited=510, improvements=297, score=1.4535, delta this round=-0.0023
+[hill_climb] time budget hit before round 2
+[hill_climb] done: 600.2s, 1270 macros visited, 910 improvements, score: 1.4731 -> 1.4535 (-0.0196)
+[place] post-hill_climb: proxy=1.4535, overlaps=0, climb_delta=-0.0196
+proxy=1.4535  (wl=0.059 den=0.636 cong=2.153)  VALID  [650.95s]
+  ibm18... #[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm18/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 55, Row: 39
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+#[INFO] Reading from external/MacroPlacement/Testcases/ICCAD04/ibm18/netlist.pb.txt
+[INFO] Retrieving Meta information from .plc comments
+#[PLACEMENT GRID] Col: 55, Row: 39
+#[ROUTES PER MICRON] Hor: 65.96, Ver: 106.96
+#[CONGESTION SMOOTH RANGE] Smooth Range: 2
+#[OVERLAP THRESHOLD] Threshold: 0.0040
+Dreamplace torch device: cuda, seed=459
+[place] hrouting_alloc=30.304  vrouting_alloc=71.304
+[place] net_weights: exp=0.5, min=1.41, max=3.87, mean=1.00
+[place] optimizer=adam lr=0.01
+it=0000 loss=0.0909 wl=0.0909 d=1.4613 c=2.6287 ov=0.2332 proxy=1.7899 (ovlp=76, best=1.7899)
+it=0050 loss=0.1887 wl=0.0816 d=1.4584 c=2.5457 ov=33.3708 proxy=1.8609 (ovlp=206, best=1.7899)
+it=0100 loss=0.7308 wl=0.0783 d=1.6034 c=2.4576 ov=36.9875 proxy=1.7774 (ovlp=200, best=1.7774)  pcc[wl=+0.93 d=+0.46 c=+0.98]
+it=0150 loss=1.3001 wl=0.0778 d=1.4235 c=2.4200 ov=54.9386 proxy=1.6568 (ovlp=248, best=1.6568)  pcc[wl=+0.54 d=+0.45 c=+0.99]
+it=0200 loss=1.8662 wl=0.0774 d=1.4164 c=2.3937 ov=67.3552 proxy=1.6276 (ovlp=259, best=1.6276)  pcc[wl=+0.15 d=+0.45 c=+0.96]
+it=0250 loss=2.4271 wl=0.0771 d=1.3893 c=2.3769 ov=73.9078 proxy=1.5985 (ovlp=262, best=1.5923)  pcc[wl=-0.08 d=+0.49 c=+0.93]
+it=0300 loss=2.9915 wl=0.0770 d=1.3485 c=2.3749 ov=74.4055 proxy=1.5864 (ovlp=256, best=1.5864)  pcc[wl=-0.21 d=+0.59 c=+0.88]
+it=0350 loss=6.3593 wl=0.0774 d=1.2483 c=2.3625 ov=3.8663 proxy=1.5750 (ovlp=88, best=1.5750)  pcc[wl=-0.29 d=+0.67 c=+0.87]
+it=0400 loss=4.0815 wl=0.0773 d=1.2580 c=2.3566 ov=0.0039 proxy=1.5696 (ovlp=2, best=1.5696)  pcc[wl=-0.33 d=+0.73 c=+0.87]
+it=0450 loss=4.1516 wl=0.0771 d=1.2739 c=2.3536 ov=0.0011 proxy=1.5597 (ovlp=0, best=1.5511)  pcc[wl=-0.36 d=+0.76 c=+0.87]
+it=0500 loss=4.2225 wl=0.0770 d=1.2766 c=2.3536 ov=0.0000 proxy=1.5656 (ovlp=0, best=1.5511)  pcc[wl=-0.39 d=+0.78 c=+0.85]
+it=0550 loss=4.2950 wl=0.0770 d=1.2775 c=2.3529 ov=0.0000 proxy=1.5718 (ovlp=0, best=1.5511)  pcc[wl=-0.41 d=+0.80 c=+0.82]
+it=0600 loss=4.3128 wl=0.0769 d=1.2801 c=2.3514 ov=0.0000 proxy=1.5498 (ovlp=0, best=1.5498)  pcc[wl=-0.43 d=+0.81 c=+0.82]
+it=0650 loss=4.3172 wl=0.0768 d=1.2814 c=2.3507 ov=0.0000 proxy=1.5493 (ovlp=0, best=1.5486)  pcc[wl=-0.45 d=+0.82 c=+0.82]
+it=0700 loss=4.3200 wl=0.0768 d=1.2847 c=2.3513 ov=0.0000 proxy=1.5507 (ovlp=0, best=1.5486)  pcc[wl=-0.46 d=+0.83 c=+0.82]
+it=0750 loss=4.3212 wl=0.0768 d=1.2886 c=2.3507 ov=0.0000 proxy=1.5476 (ovlp=0, best=1.5476)  pcc[wl=-0.47 d=+0.83 c=+0.82]
+[place] surrogate vs exact (Pearson):  wl=-0.482  den=+0.833  cong=+0.810
+k=0 : score=1.5476, overlaps=0
+k=1 : score=1.5476, overlaps=0
+k=2 : score=1.5476, overlaps=0
+k=5 : score=1.5476, overlaps=0
+k=10 : score=1.5476, overlaps=0
+k=20 : score=1.5476, overlaps=0
+k=50 : score=1.5476, overlaps=0
+k=100 : score=1.5476, overlaps=0
+k=1000000000 : score=1.5476, overlaps=0
+[place] returning best snapshot: proxy=1.5476, overlaps=0
+[place] legalize-all-buckets (9 candidates):
+  bucket      raw_score  raw_ovlp  legal_score  legal_ovlp    degrad
+  bucket_0       1.5476         0       1.5476           0   +0.0000 *
+  bucket_1       1.5476         0      SKIPPED (raw >= best legal 1.5476)
+  bucket_2       1.5476         0      SKIPPED (raw >= best legal 1.5476)
+  bucket_5       1.5476         0      SKIPPED (raw >= best legal 1.5476)
+  bucket_10      1.5476         0      SKIPPED (raw >= best legal 1.5476)
+  bucket_20      1.5476         0      SKIPPED (raw >= best legal 1.5476)
+  bucket_50      1.5476         0      SKIPPED (raw >= best legal 1.5476)
+  bucket_100     1.5476         0      SKIPPED (raw >= best legal 1.5476)
+  bucket_1000000000     1.5476         0      SKIPPED (raw >= best legal 1.5476)
+[place] winner: bucket_0 -> legal_proxy=1.5476 (raw 1.5476 with 0 overlaps, degradation=+0.0000)
+[place] hill_climb budget: 600s (base=600s, num_hard=285)
+[hill_climb] start: score=1.5476, 285 movable, max_rounds=5, budget=600s, k_neighbors=10
+[hill_climb] round 0: visited=285, improvements=235, score=1.5400, delta this round=-0.0076
+[hill_climb] round 1: visited=285, improvements=156, score=1.5387, delta this round=-0.0013
+[hill_climb] round 2: visited=285, improvements=153, score=1.5378, delta this round=-0.0009
+[hill_climb] round 3: visited=285, improvements=118, score=1.5375, delta this round=-0.0003
+[hill_climb] round 4: visited=285, improvements=78, score=1.5373, delta this round=-0.0002
+[hill_climb] done: 162.2s, 1425 macros visited, 740 improvements, score: 1.5476 -> 1.5373 (-0.0103)
+[place] post-hill_climb: proxy=1.5373, overlaps=0, climb_delta=-0.0103
+proxy=1.5373  (wl=0.057 den=0.793 cong=2.168)  VALID  [189.33s]
+
+--------------------------------------------------------------------------------
+    Benchmark     Proxy        SA   RePlAce     vs SA  vs RePlAce  Overlaps
+--------------------------------------------------------------------------------
+        ibm01    0.9249    1.3166    0.9976    +29.8%       +7.3%         0
+        ibm02    1.2730    1.9072    1.8370    +33.3%      +30.7%         0
+        ibm03    1.0911    1.7401    1.3222    +37.3%      +17.5%         0
+        ibm04    1.0736    1.5037    1.3024    +28.6%      +17.6%         0
+        ibm06    1.3854    2.5057    1.6187    +44.7%      +14.4%         0
+        ibm07    1.2370    2.0229    1.4633    +38.8%      +15.5%         0
+        ibm08    1.2313    1.9239    1.4285    +36.0%      +13.8%         0
+        ibm09    0.9045    1.3875    1.1194    +34.8%      +19.2%         0
+        ibm10    1.1420    2.1108    1.5009    +45.9%      +23.9%         0
+        ibm11    0.9748    1.7111    1.1774    +43.0%      +17.2%         0
+        ibm12    1.4057    2.8261    1.7261    +50.3%      +18.6%         0
+        ibm13    1.0770    1.9141    1.3355    +43.7%      +19.4%         0
+        ibm14    1.2953    2.2750    1.5436    +43.1%      +16.1%         0
+        ibm15    1.3388    2.3000    1.5159    +41.8%      +11.7%         0
+        ibm16    1.2399    2.2337    1.4780    +44.5%      +16.1%         0
+        ibm17    1.4535    3.6726    1.6446    +60.4%      +11.6%         0
+        ibm18    1.5373    2.7755    1.7722    +44.6%      +13.3%         0
+--------------------------------------------------------------------------------
+          AVG    1.2109    2.1251    1.4578    +43.0%      +16.9%         0
+
+Total runtime: 4969.29s
+
+mlew@mlew:~/Desktop/PROJS/macroplace2026$ 
+
